@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Naše Arduino projekty
+Rozhodl jsem se sepsat projekty, které provádím se svými dětmi a elektronikou. Úkoly jsou různě obtížné, začali jsme někdy v 5 letech, postupně se prokousáváme dále, jak věkem, tak obsahem.
 
-You can use the [editor on GitHub](https://github.com/javorekm/arduino-deti/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Literatury k Arduinu je všude dost, ale konkrétních příkladů co zkoušet s dětmi už je podstatně méně. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Obecné 
+Všechny nápady se týkají Arduina, což nutně nemusí být Uno R3, ale klidně i Pro mini a podobné. Součátky je možné nakupovat v ČR i v zahraničí (obvykle levněji). SW programujeme v [Arduino IDE](https://www.arduino.cc/en/main/software). Pro kreslení schémat využíváme [Fritzing](http://fritzing.org).
 
-### Markdown
+Ve všech projektech popisuji seznam součástek, ale Arduino board mezi nimi chybí, nechtěl jsem to jen neustále opakovat - všechny jsou za využití Arduina. Stejně tak neuvádím, že potřebujeme k projektu vodiče, nepájivé pole či napájení. Potřebujeme vždy.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Řešené potíže
+### "Permission denied" při pokusu nahrát program do Arduina na Linuxu
+Uživatel musí být členem skupiny `dialout`.
+``` bash
+$ sudo usermod -aG dialout <user>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Hraní s LEDkami
+* [Ruční blikače](rucni_blikace/rucni_blikace.md)
+* [Automatické blikače](automaticke_blikace/automaticke_blikace.md)
+* [Semafor](semafor/semafor.md)
+* [Night rider](night_rider/night_rider.md)
+* RGB LED
+* 8-segmentovky
 
-### Jekyll Themes
+## Ovládnutí displejů
+* Znakový LCD displej
+* OLED
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/javorekm/arduino-deti/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Infra
+* Zmapování domácích vysílačů
+* Infra a LED
+* Zkoušení matematiky
 
-### Support or Contact
+## Čidla
+* Teploměr s 8 segmentovým LED
+* Ultrazvukové měření vzdálenosti
+* Vlhkost půdy
+* Vlhkost vzduchu, teplota, nadmořská výška
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Robopixle
