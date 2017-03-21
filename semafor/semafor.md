@@ -20,6 +20,8 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
   Bohužel, váš prohlížeč neumí HTML5 video.
 </video> 
 
+[Semafor video](semafor.mp4)
+
 ## Hardware
 * Zelené, žluté, červené LED
 * Rezistory 220&nbsp;Ω - 330&nbsp;Ω
