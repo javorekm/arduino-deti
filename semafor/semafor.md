@@ -16,8 +16,8 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 
 ## Video
 <video width="1280" height="720" controls>
-  <source src="semafor.mp4" type="video/mp4">
-  Bohužel, váš prohlížeč neumí HTML5 video.
+<source src="semafor.mp4" type="video/mp4">
+Bohužel, váš prohlížeč neumí HTML5 video.
 </video> 
 
 [Semafor video](semafor.mp4)
