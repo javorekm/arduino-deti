@@ -19,9 +19,13 @@ Základy zapojování LED. Základní programové konstrukce pro ovládání dig
 ## Program
 [night_rider.ino](night_rider.ino)
 ```c++
-{% include night_rider.ino %}
+{% include_relative night_rider.ino %}
 ```
 ## Možná vylepšení
 
 ## Poznatky
+<<<<<<< HEAD
 Pokud jsou pro děti cykly obtížné (a to často jsou), ničemu nevadí, když kopírují hromady kódu. Časem je to přestává bavit a samy se začínají ptát, zda se to nedá udělat nějak lépe, aby se to pořád nemusel kopírovat. Výše uvedený program s Night riderem v této podobě dítě do 8 let nenapíše. V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, co se v kódu píše, ale aby to blikalo.
+=======
+Pokud jsou pro děti cykly obtížné (a to často jsou), ničemu nevadí, když kopírují hromady kódu. Časem je to přestává bavit a samy se začínají ptát, zda se to nedá udělat nějak lépe, aby se to pořád nemusel kopírovat. Výše uvedený program s Night riderem v této podobě dítě do 8 let nenapíše. V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, vo se v kódu píše, ale aby to blikalo.
+>>>>>>> origin/master
