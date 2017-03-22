@@ -1,5 +1,5 @@
 // jak dlouho ma pockat
-int sekunda = 1000;
+const int sekunda = 1000;
 
 int casC = 15 * sekunda;
 int casOC = 1 * sekunda;
