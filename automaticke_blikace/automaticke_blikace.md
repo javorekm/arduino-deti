@@ -8,7 +8,7 @@ Různá zapojení automatických blikačů. Základní struktura programu (nasta
 Vysvětlení, co je to `GND`, `VCC`, jaké typy napětí kde na Arduinu najdeme.
 
 ## Co je potřeba umět
-Základy zapojování LED.
+[Základy zapojování LED](../rucni_blikace/rucni_blikace.md)
 
 ## Foto
 Fotografie nezobrazuje přesně typ automatického blikače, který je dále popsán kódem.
