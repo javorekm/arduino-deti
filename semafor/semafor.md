@@ -35,7 +35,7 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 ## Program
 [semafor.ino](semafor.ino) - kód je napsán osmiletým dítětem, obsahuje různá vylepšení standardního semaforu viz níže
 ``` c++
-{% include semafor.ino %}
+{% include_relative semafor.ino %}
 ```
 ## Možná vylepšení
 * Doplnění klasického auto-semaforu ještě o semafor pro chodce.
