@@ -5,7 +5,7 @@ Základní osahání součástek. Osahání LEDek. Anoda, katoda. Mnemotechnick�
 * "ANOda", kde ANO = kladné přitakání, tedy plus
 * ta delší nožička, což znamená "více", tedy plus
 
-Připojení LED přes rezistor. Osahání si prototypovacího nepájivého pole, vysvětlení vnitřního zapojení pole (koleje s + a - u velkého, rozdíly u malého), doporučené barvy u vodičů.
+[Připojení LED přes rezistor](https://arduino.cz/proc-musim-u-led-pouzit-rezistor/) (pozor, ať se neusmaží i samotné Arduino, [max proudové zatížení digitálního pinu je 40 mA](http://playground.arduino.cc/Main/ArduinoPinCurrentLimitations)). Osahání si prototypovacího nepájivého pole, vysvětlení vnitřního zapojení pole (koleje s `+` a `-` u velkého, rozdíly u malého), doporučené barvy u vodičů.
 
 Spínače. Úlohy na rozsvícení 1 LED spínačem. 2 LED 1 spínačem, každou zvlášť svým spínačem apod.
 
