@@ -1,5 +1,5 @@
 // jak dlouho ma pockat
-int cas = 100;
+const int cas = 100;
 
 void setup() {
   pinMode(8, OUTPUT);
