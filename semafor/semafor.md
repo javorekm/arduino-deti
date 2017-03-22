@@ -15,12 +15,13 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 ![](P1360417.JPG)
 
 ## Video
-<video width="1280" height="720" controls>
-<source src="semafor.mp4" type="video/mp4">
-Bohužel, váš prohlížeč neumí HTML5 video.
-</video> 
 
-[Semafor video](semafor.mp4)
+<div markdown="0">
+    <video controls>
+        <source src="semafor.mp4" type="video/mp4">
+        Bohužel, váš prohlížeč neumí HTML5 video. <a href="semafor.mp4">Přehrajte si jej jako soubor.</a>
+    </video>
+</div>
 
 ## Hardware
 * Zelené, žluté, červené LED
@@ -34,7 +35,7 @@ Bohužel, váš prohlížeč neumí HTML5 video.
 ## Program
 [semafor.ino](semafor.ino) - kód je napsán osmiletým dítětem, obsahuje různá vylepšení standardního semaforu viz níže
 ``` c++
-{% include semafor.ino %}
+{% include_relative semafor.ino %}
 ```
 ## Možná vylepšení
 * Doplnění klasického auto-semaforu ještě o semafor pro chodce.

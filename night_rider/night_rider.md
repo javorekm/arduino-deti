@@ -17,7 +17,7 @@ Základy zapojování LED. Základní programové konstrukce pro ovládání dig
 ## Program
 [night_rider.ino](night_rider.ino)
 ```c++
-{% include night_rider.ino %}
+{% include_relative night_rider.ino %}
 ```
 ## Možná vylepšení
 
