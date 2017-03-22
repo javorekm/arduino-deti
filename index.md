@@ -37,12 +37,11 @@ $ sudo usermod -aG dialout <user>
 
 ## Čidla
 * Teploměr s 8 segmentovým LED
-* Ultrazvukové měření vzdálenosti
+* [Ultrazvukové měření vzdálenosti](meric_vzdalenosti/meric_vzdalenosti.md)
 * Vlhkost půdy
 * Vlhkost vzduchu, teplota, nadmořská výška
 
-## Robopixle
-* Tady rozepsat naši robopixli.
+## [Robopixle](robopixle/robopixle,md)
 
 ## Plánujeme
 * Domovní zvonek na střídavých 20V se dvěma melodiema
