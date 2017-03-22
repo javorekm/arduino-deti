@@ -32,18 +32,26 @@ void vypis(int vzdalenost) {
 }
 
 void loop() {
-  long duration, vzdalenost;
+  long doba, vzdalenost;
   // PULSE ___|---|___
+  // vycisti trigger pin
   digitalWrite(trigPin, LOW); 
   delayMicroseconds(2);
+  // posli 8 cyklu za 10 mikrosekund
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
+  // vypni posilani
   digitalWrite(trigPin, LOW);
 
   // precteme echo pin
-  duration = pulseIn(echoPin, HIGH);
+  doba = pulseIn(echoPin, HIGH);
   //prepocet na vzdalenost
-  vzdalenost = (duration / 2) / 29.1;
+  //-----------------------------
+  // rychlost zvuku = 340 m/s = 0,034 cm/us (mikrosekund)
+  // t = s/v => s = t * v
+  // s = cas * 0,034
+  // na konci musime vzdalenost vydelit 2, protoze zvuk leti tam a zpet
+  vzdalenost = (doba * 0.034) / 2;
 
   u8g.firstPage();
   do {

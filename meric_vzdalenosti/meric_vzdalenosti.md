@@ -16,7 +16,29 @@ Jednoduchý ultrazvukový měřič vzdálenosti se zobrazováním hodnot na OLED
 * [ultrazvukové čidlo HC-SR04](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170322115709&SearchText=hc-sr04)
 
 ## Jak to funguje
+### Měření vzdálenosti ultrazvukem
+Sensor HC-SR04 má tyto parametry:
+* Napájení: +5V DC
+* Klidový proud : < 2mA
+* Pracovní proud: 15mA
+* Účinný úhel: < 15°
+* Měřící rozsah: 2cm – 400 cm
+* Rozlišení : 0,3 cm
+* Měřící úhel: 30°
 
+2 piny sensoru jsou napájení (VCC, GND), jeden je vstupní (Trigger) a jeden výstupní (Echo). 
+
+Rychlost zvuku je asi 340 m/s = 34&nbsp;000 cm/s = 34 cm/ms = **0,034 cm/µs**  (0,034 cm za mikrosekundu). 
+
+Na trigger pin sensoru nastavíme na 10 µs 5V, čímž vypustíme 8 ultrazvukových vln, následně nám echo pin prozradí, kolik mikrosekund čekal na jejich odraz. Výsledná vzdálenost v cm se následně spočítá
+```
+s = t * v
+s = t * 0,034
+```
+**Nesmíme ji ale zapomenout vydělit 2**, protože zvuk letěl samozřejmě k překážce a zpět.
+
+### OLED
+Pro ovládání displeje využíváme knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference).
 
 ## Schéma zapojení
 [meric_vzdalenosti.fzz](meric_vzdalenosti.fzz)
