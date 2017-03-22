@@ -1,3 +1,5 @@
+[← zpět na zápisky z Arduino projektů](../index.md)
+
 # Ruční blikače
 Základní osahání součástek. Osahání LEDek. Anoda, katoda. Mnemotechnické pomůcky pro rozlišení nožiček:
 * "ANOda", kde ANO = kladné přitakání, tedy plus

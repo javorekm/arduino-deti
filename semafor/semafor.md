@@ -1,3 +1,5 @@
+[← zpět na zápisky z Arduino projektů](../index.md)
+
 # Semafor
 Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru samostatnosti lze regulovat (od zapojení HW přes napsání celého SW apod.) Abychom mohli snadno měnit intervaly pro jednotlivé barvy, zavedli jsme proměnné (v roli konstant). Pro lepší orientaci v kódu využíváme hojně komentáře.
 
