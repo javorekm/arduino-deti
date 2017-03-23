@@ -19,7 +19,7 @@ Jednoduchý ultrazvukový měřič vzdálenosti se zobrazováním hodnot na OLED
 ### Měření vzdálenosti ultrazvukem
 Sensor HC-SR04 má tyto parametry:
 * Napájení: +5&nbsp;V&nbsp;DC
-* Klidový proud : < 2&nbsp;mA
+* Klidový proud: < 2&nbsp;mA
 * Pracovní proud: 15&nbsp;mA
 * Pracovní frekvence: 40&nbsp;kHz
 * Měřící rozsah: 2&nbsp;cm – 400&nbsp;cm
