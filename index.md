@@ -40,7 +40,7 @@ $ sudo usermod -aG dialout <user>
 * Vlhkost půdy
 * Vlhkost vzduchu, teplota, nadmořská výška
 
-## [Robopixle](robopixle/robopixle,md)
+## [Robopixle](robopixle/robopixle.md)
 
 ## Plánujeme
 * Domovní zvonek na střídavých 20V se dvěma melodiemi
