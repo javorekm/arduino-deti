@@ -1,4 +1,3 @@
-// include the library code:
 #include <LiquidCrystal.h>
 #include <IRremote.h>
 
@@ -15,7 +14,7 @@ IRrecv irrecv(RECV_PIN);
 decode_results results;
 
 // do kolika vymysli priklady
-long max = 10;
+int max = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -24,10 +23,12 @@ void setup() {
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
 
+  // zeptame se, do kolika budeme generovat priklady
   lcd.print("Do kolika?");
   max = ctiDalkac(0, 1);
   lcd.clear();
 
+  // pokud je to vice nez, tak to zarizneme
   if (max > 100) {
     lcd.print("To je moc,");
     lcd.setCursor(0, 1);
@@ -37,7 +38,7 @@ void setup() {
     lcd.clear();
   }
 
-  // Print a message to the LCD.
+ //text pro pocitani
   lcd.print("Vypocitej");
 }
 

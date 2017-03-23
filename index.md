@@ -24,7 +24,6 @@ $ sudo usermod -aG dialout <user>
 * [Knight rider](knight_rider/knight_rider.md)
 * Žížala
 * RGB LED
-* 8-segmentovky
 
 ## Ovládnutí displejů
 * Znakový LCD displej
@@ -36,15 +35,15 @@ $ sudo usermod -aG dialout <user>
 * Zkoušení matematiky
 
 ## Čidla
-* Teploměr s 8 segmentovým LED
-* [Ultrazvukové měření vzdálenosti](meric_vzdalenosti/meric_vzdalenosti.md)
+* [Teploměr se 7 segmentovým LED](teplomer/teplomer.md)
+* [Ultrazvukové měření vzdálenosti s OLED](meric_vzdalenosti/meric_vzdalenosti.md)
 * Vlhkost půdy
 * Vlhkost vzduchu, teplota, nadmořská výška
 
-## [Robopixle](robopixle/robopixle,md)
+## [Robopixle](robopixle/robopixle.md)
 
 ## Plánujeme
-* Domovní zvonek na střídavých 20V se dvěma melodiema
+* Domovní zvonek na střídavých 20V se dvěma melodiemi
 * Čidlo vlhkosti a teploty do koupelny
 * Znalostní zkoušetko
 
