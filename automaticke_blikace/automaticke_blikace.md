@@ -38,7 +38,8 @@ Fotografie nezobrazuje přesně typ automatického blikače, který je dále pop
 ```
 
 ## Možná vylepšení
-* Nejrůznější variace blikačů, světla železničního přejezdu, nebo [semafor](../semafor/semafor.md) či [Night rider](../night_rider/night_rider.md).
+* Nejrůznější variace blikačů, světla železničního přejezdu, nebo [semafor](../semafor/semafor.md) či [Knight rider](../knight_rider/knight_rider.md).
 
 ## Poznatky
 V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, co se v kódu píše, ale aby to blikalo. Časem si osahají jednotlivé příkazy a konstrukce, případně i cykly.
+
