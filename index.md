@@ -21,7 +21,7 @@ $ sudo usermod -aG dialout <user>
 * [Ruční blikače](rucni_blikace/rucni_blikace.md)
 * [Automatické blikače](automaticke_blikace/automaticke_blikace.md)
 * [Semafor](semafor/semafor.md)
-* [Night rider](night_rider/night_rider.md)
+* [Knight rider](knight_rider/knight_rider.md)
 * Žížala
 * RGB LED
 * 8-segmentovky
