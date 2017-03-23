@@ -64,7 +64,7 @@ Jde o hromadu LED, které jsou uspořádány do nějakého obrazce. Obvykle hovo
 
 3461BS je segmentovka se společnou anodou (ve [specifikaci](LD3361BS.pdf) je to strana 39). To znamená, že výběrový pin přivádí `HIGH` a na druhý konec vybraných LED potřebujeme přivést `LOW`, aby se rozsvítily respektive `HIGH`, aby ne (u displeje se společnou katodou je to právě naopak). Protože Arduino nemá tolik pinů, využijeme posuvný registr, který vždy nejdříve nakrmíme všemi nulami a jedničkami pro jednotlivé LED a následně ho necháme, aby je pro nás rozsvítil.
 
-Tady jen poznámka ke kódu níže - v konstantě pro jednotlivé číslice máme, že hodnota 1 = LED svítí, ale výše jsem uvedl, že aby svítila, musí mít na jednom svém konci `HIGH` a na druhém `LOW`. A protože naše LED už `HIGH` na svou anodu "dostaly", musíme jim pro rozsvícení dodat `LOW`. Tedy nulu do posuvného registru. Proto se v kódu objevuje [binární negace](https://www.arduino.cc/en/Reference/BitwiseXorNot) v podobě `~`, která nám přehodí všechny 0 na 1 a obráceně. Pro displeje se společnou katodou to není potřeba.
+Tady jen poznámka ke kódu níže - v konstantě pro jednotlivé číslice máme, že hodnota 1 = LED svítí, ale výše jsem uvedl, že aby svítila, musí mít na anodě `HIGH` a na katodě `LOW`. A protože naše LED už `HIGH` na svou anodu "dostaly", musíme jim pro rozsvícení dodat `LOW` na katodu. Tedy nulu do posuvného registru tam, kde mají svítit. Proto se v kódu objevuje [binární negace](https://www.arduino.cc/en/Reference/BitwiseXorNot) v podobě `~`, která nám přehodí všechny 0 na 1 a obráceně. Pro displeje se společnou katodou to není potřeba, tam posíláme pro rozsvícení na anodu jedničky.
 
 **Pozor i 7 segmentový displej vyžaduje zapojení před rezistory!**
 
