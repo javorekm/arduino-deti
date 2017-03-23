@@ -12,17 +12,16 @@ Základy zapojování LED. Základní programové konstrukce pro ovládání dig
 * rezistory 220&nbsp;Ω - 330&nbsp;Ω
 
 ## Schéma zapojení
-[knight_rider.fzz](night_rider.fzz)
+[knight_rider.fzz](knight_rider.fzz)
 
 ![schema](knight_rider_bb.png)
 
 ## Program
-[knight_rider.ino](night_rider.ino)
+[knight_rider.ino](knight_rider.ino)
 ```c++
-{% include_relative night_rider.ino %}
+{% include_relative knight_rider.ino %}
 ```
 ## Možná vylepšení
 
 ## Poznatky
-
 Pokud jsou pro děti cykly obtížné (a to často jsou), ničemu nevadí, když kopírují hromady kódu. Časem je to přestává bavit a samy se začínají ptát, zda se to nedá udělat nějak lépe, aby se to pořád nemusel kopírovat. Výše uvedený program s Knight riderem v této podobě dítě do 8 let nenapíše. V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, vo se v kódu píše, ale aby to blikalo.
