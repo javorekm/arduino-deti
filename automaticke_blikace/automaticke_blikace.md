@@ -19,16 +19,26 @@ Fotografie nezobrazuje přesně typ automatického blikače, který je dále pop
 * dostatek různě barevných LED, některé se asi spálí
 * rezistory 220&nbsp;Ω - 330&nbsp;Ω
 * volitelně spínače
-## Schéma zapojení
 
-## Program
+## Blikač 1
+### Schéma zapojení
+
+### Program
 [blikac.ino](blikac.ino) - kód je napsán osmiletým dítětem
 ``` c++
 {% include_relative  blikac.ino %}
+```
+## Blikač 2
+### Schéma zapojení
+
+### Program
+[blikac.ino](blikac2.ino) - kód je napsán osmiletým dítětem
+``` c++
+{% include_relative  blikac2.ino %}
 ```
 
 ## Možná vylepšení
 * Nejrůznější variace blikačů, světla železničního přejezdu, nebo [semafor](../semafor/semafor.md) či [Night rider](../night_rider/night_rider.md).
 
 ## Poznatky
-V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, co se v kódu píše, ale aby to blikalo.
+V prvních chvílích není ani tak důležité, aby děti rozuměly všemu, co se v kódu píše, ale aby to blikalo. Časem si osahají jednotlivé příkazy a konstrukce, případně i cykly.
