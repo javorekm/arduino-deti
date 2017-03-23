@@ -1,0 +1,1 @@
+Statické zápisky o našich domácích dětských projektech v Arduinu, které si můžete prohlédnout na [arduino.zausima.cz](http://arduino.zausima.cz).
