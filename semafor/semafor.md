@@ -47,4 +47,4 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 * Pro formulové nadšence je možné vyrobit [startovací světla](https://www.google.com/search?q=odjezdov%C3%A9+n%C3%A1v%C4%9Bstidlo&client=firefox-b&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjeoaqExufSAhVlIpoKHaayDeIQ_AUICCgB&biw=1600&bih=793#tbm=isch&q=formula+start+lights&*).
 
 ## Poznatky
-Zajímavá úloha pro procvičení samostatnosti, protože jak funguje semafor ví každé dítě, takže zadání není třeba příliš vysvětlovat. S výsledkem si lze navíc i vyhrát, pokud se využije malé nepájivé pole a nacpe se do krabičky od zápalek, je celé řešení celkem kompaktní. Mladší děti konči u standardního semaforu, starší ho šperkují.
+Zajímavá úloha pro procvičení samostatnosti, protože jak funguje semafor ví každé dítě, takže zadání není třeba příliš vysvětlovat. S výsledkem si lze navíc i vyhrát, pokud se využije malé nepájivé pole a nacpe se do krabičky od zápalek, je celé řešení celkem kompaktní. Mladší děti končí u standardního semaforu, starší ho šperkují.
