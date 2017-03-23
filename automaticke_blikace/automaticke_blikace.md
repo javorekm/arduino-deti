@@ -32,7 +32,7 @@ Fotografie nezobrazuje přesně typ automatického blikače, který je dále pop
 ### Schéma zapojení
 
 ### Program
-[blikac.ino](blikac2.ino) - kód je napsán osmiletým dítětem
+[blikac2.ino](blikac2.ino) - kód je napsán osmiletým dítětem
 ``` c++
 {% include_relative  blikac2.ino %}
 ```
