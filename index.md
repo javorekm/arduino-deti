@@ -44,6 +44,6 @@ $ sudo usermod -aG dialout <user>
 
 ## Plánujeme
 * Domovní zvonek na střídavých 20V se dvěma melodiemi
-* Čidlo vlhkosti a teploty do koupelny
+* Čidlo vlhkosti a teploty do koupelny se zvukovou signalizací pro zavření větracího okna
+* Světelná infra závora pro blbnutí na zahradě
 * Znalostní zkoušetko
-

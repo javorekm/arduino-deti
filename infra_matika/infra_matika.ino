@@ -1,7 +1,7 @@
 #include <LiquidCrystal.h>
 #include <IRremote.h>
 
-// initialize the library with the numbers of the interface pins
+// inicializace LCD displeje
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 int RECV_PIN = 13;
@@ -17,10 +17,11 @@ decode_results results;
 int max = 0;
 
 void setup() {
-  Serial.begin(9600);
+  // testovaci konzole
+  // Serial.begin(9600);
   randomSeed(analogRead(0));
-  irrecv.enableIRIn(); // Start the receiver
-  // set up the LCD's number of columns and rows:
+  irrecv.enableIRIn(); // nastartuj IR prijimac
+  // nastartovani LCD displeje, pocet radek, pocet sloupcu
   lcd.begin(16, 2);
 
   // zeptame se, do kolika budeme generovat priklady
