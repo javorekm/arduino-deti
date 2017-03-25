@@ -7,7 +7,7 @@ Základní osahání součástek. Osahání LEDek. Anoda, katoda. Mnemotechnick�
 
 ![Delší nožička](led_cervena.jpg)
 
-* při pohledu shora může být jedna strana seříznutá, tedy "mínus"
+* při pohledu shora nebo zespodu může být jedna strana seříznutá, tedy "mínus"
 
 ![Seříznuto](seriznuto.png)
 
