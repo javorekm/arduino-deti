@@ -14,7 +14,7 @@ Základy zapojování LED. Základní programové konstrukce pro ovládání dig
 ## Schéma zapojení
 [knight_rider.fzz](knight_rider.fzz)
 
-![schema](knight_rider_bb.png)
+[![schema](knight_rider_bb.png)](knight_rider_bb.png)
 
 ## Program
 [knight_rider.ino](knight_rider.ino)

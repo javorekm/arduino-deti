@@ -88,7 +88,7 @@ Jen malé upozornění pro další pokusy s posuvným registrem, najednou z něj
 [teplomer.fzz](teplomer.fzz)
 Zapojení kreslilo 7 leté dítě :-)
 
-![teplomer](teplomer_bb.png)
+[![teplomer](teplomer_bb.png)](teplomer_bb.png)
 
 ## Program
 [teplomer.ino](teplomer.ino)

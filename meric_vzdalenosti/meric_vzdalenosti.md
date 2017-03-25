@@ -43,7 +43,7 @@ Pro ovládání displeje využíváme knihovnu [u8g](https://github.com/olikraus
 ## Schéma zapojení
 [meric_vzdalenosti.fzz](meric_vzdalenosti.fzz)
 
-![meric_vzdalenosti](meric_vzdalenosti_bb.png)
+[![meric_vzdalenosti](meric_vzdalenosti_bb.png)](meric_vzdalenosti_bb.png)
 
 ## Program
 [meric_vzdalenosti.ino](meric_vzdalenosti.ino)

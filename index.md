@@ -26,7 +26,7 @@ $ sudo usermod -aG dialout <user>
 * RGB LED
 
 ## Ovládnutí displejů
-* Znakový LCD displej
+* [Znakový LCD displej](lcd/lcd.md)
 * OLED
 
 ## Infra

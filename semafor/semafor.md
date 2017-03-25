@@ -32,7 +32,7 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 ## Schéma zapojení
 [semafor.fzz](semafor.fzz)
 
-![semafor](semafor_bb.png)
+[![semafor](semafor_bb.png)](semafor_bb.png)
 
 ## Program
 [semafor.ino](semafor.ino) - kód je napsán osmiletým dítětem, obsahuje různá vylepšení standardního semaforu viz níže
