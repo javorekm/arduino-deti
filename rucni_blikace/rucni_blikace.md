@@ -20,6 +20,10 @@ Prakticky nic. Začínáme. Neprogramujeme, jen zapojujeme.
 * Rezistory 220&nbsp;Ω - 330&nbsp;Ω
 * Spínače
 ## Schéma zapojení
+[rucni_blikac.fzz](rucni_blikac.fzz)
+
+[![rucni_blikac](rucni_blikac_bb.png)](rucni_blikac_bb.png)
+
 ## Program
 Není potřeba. Arduino slouží nejvýše jako zdroj napájení pro pole.
 ## Možná vylepšení
