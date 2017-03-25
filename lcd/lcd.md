@@ -6,7 +6,7 @@ Já vím, já vím, je to stejné, jako psát CD disk, přičemž zkratka CD už
 Tato úloha slouží pouze k osahání displeje jako takového. K řádnému připojení, vyzkoušení, že vše funguje a až ho budeme někde potřebovat, tak už to budeme umět. 
 
 ## Co je potřeba umět
-Displej je obvykle s "dírkami" místo pinů. Ty jsou dobré k pájení obvodů, ale už podstatně méně se hodí k prototypování, tedy rozebiratelnému spojování obvodů na zkoušku. Je tedy dobré ho nejdříve opatřit "hřebenem". Na tom může dítě nacvičit pájení. Spoje se samozřejmě nesmí nikde dotýkat.
+Displej je obvykle s "dírkami" místo pinů. Ty jsou dobré k pájení obvodů, ale už podstatně méně se hodí k prototypování, tedy rozebíratelnému spojování obvodů na zkoušku. Je tedy dobré ho nejdříve opatřit "hřebenem". Na tom může dítě nacvičit pájení. Spoje se samozřejmě nesmí nikde dotýkat.
 
 ## Foto
 
