@@ -9,22 +9,25 @@ Tato úloha slouží pouze k osahání displeje jako takového. K řádnému př
 Displej je obvykle s "dírkami" místo pinů. Ty jsou dobré k pájení obvodů, ale už podstatně méně se hodí k prototypování, tedy rozebiratelnému spojování obvodů na zkoušku. Je tedy dobré ho nejdříve opatřit "hřebenem". Na tom může dítě nacvičit pájení. Spoje se samozřejmě nesmí nikde dotýkat.
 
 ## Foto
+
+![](P1130017.JPG)
 ![](P1370937.JPG)
 ![](P1370954.JPG)
+![](P1130018_crop_.jpg)
 ![](P1360312.JPG)
 
 ## Hardware
-* LCD, my jsme použili 16×2 (16 znaků × 2 řádky) TODO
+* LCD, my jsme použili Qapass 1602A, 16 znaků × 2 řádky ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170325123003&SearchText=1602a), [specifikace](eone-1602a1.pdf))
 * 10&nbsp;kΩ potenciometr
 * 330&nbsp;Ω rezistor
 
 ## Jak to funguje
-Zapojení vychází z příkladu TODO a využívá programově knihovnu [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal). Potenciometr slouží k regulaci intenzity podsvětlení displeje.
+Zapojení vychází z [jednoduchého příkladu](https://www.arduino.cc/en/Tutorial/HelloWorld) a využívá programově knihovnu [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal). Potenciometr slouží k regulaci intenzity podsvětlení displeje.
 
 ## Schéma zapojení
 [lcd.fzz](lcd.fzz)
 
-![lcd](lcd_bb.png)
+[![lcd](lcd_bb.png)](lcd_bb.png)
 
 ## Program
 [lcd.ino](lcd.ino)
@@ -33,7 +36,7 @@ Zapojení vychází z příkladu TODO a využívá programově knihovnu [LiquidC
 ```
 ## Možná vylepšení
 * Libovolný jiný text :-)
-* Vyzkoušení dalších možností knihovny [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal), jako pozicování kurzoru, speciální znaky apod.
+* Vyzkoušení dalších možností knihovny [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal), jako pozicování kurzoru, posouvání textu, jiné znaky apod.
 
 ## Poznatky
 Pájení není vůbec lehký úkol, ale trénuje to motoriku a rozhodně patří pro děti k těm zajímavým :-) Radost z vlastních textů na displeji je samozřejmě také nefalšovaná.
