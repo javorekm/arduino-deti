@@ -32,7 +32,7 @@ Tento projekt je z velké části postaven na pokusech s [LCD](../lcd/lcd.md) a 
 
 [![aiwa infra](aiwa_infra_bb.png)](aiwa_infra_bb.png)
 
-## Program pro detekci kódů ovladač
+## Program pro detekci kódů ovladače
 Program slouží k detekci jednotlivých kódů. Je založen na demo programu [IRrecvDump.ino](https://github.com/z3t0/Arduino-IRremote/blob/master/examples/IRrecvDump/IRrecvDump.ino), který vypisuje hodnoty, které detekuje na infrasenzoru. Tímto způsobem je možné zjistit, jaké kódy vysílá váš ovladač, zapsat si je a dále je využít pro ovládání vašich projektů. V případě dálkových ovladačů k zařízením jako je televize nebo rádio je dobré vybírat tlačítka, která je nespustí, aby pak šlo ovládat Arduino v jejich přítomnosti a nezapínat u toho televizi.
 
 [aiwa_infra.ino](aiwa_infra.ino)
