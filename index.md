@@ -32,7 +32,7 @@ $ sudo usermod -aG dialout <user>
 ## Infra
 * Zmapování domácích vysílačů
 * Infra a LED
-* Zkoušení matematiky
+* [Zkoušení matematiky](infra_matika/infra_matika.md)
 
 ## Čidla
 * [Teploměr se 7 segmentovým LED](teplomer/teplomer.md)
