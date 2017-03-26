@@ -1,15 +1,23 @@
 #include <LiquidCrystal.h>
 #include <IRremote.h>
 
-// inicializace LCD displeje
+// inicializace LCD
+// 1. parametr = pin Arduina, na ktery je pripojen RS pin LCD
+// 2. parametr =  pin Arduina, na ktery je pripojen enable pin LCD
+// 3. - 6. parametr = piny Arduina, na ktere jsou pripojeny datove piny d4 - d7 z LCD
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-int RECV_PIN = 13;
+// pin, na kterem prijimame infra signal
+const int RECV_PIN = 13;
+// pin pro cervenou LED
 const int LED_CHYBA = 9;
+// pin pro zelenou LED
 const int LED_OK = 10;
 
+// pocitadlo bodu
 int body = 0;
 
+// inicializace infracervene knihovny
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 
@@ -43,6 +51,10 @@ void setup() {
   lcd.print("Vypocitej");
 }
 
+// precte hodnotu z dalkoveho ovladace Aiwa
+// x = pozice x na displeji
+// y = pozice y na displeji
+// vraci cislo, ktere nacetl, ocekava na konci enter, podporuje backspace pro mazani znaku
 int ctiDalkac(int x, int y) {
   bool enter = false;
   int vysledek = 0;
@@ -110,12 +122,15 @@ int ctiDalkac(int x, int y) {
         vysledek = vysledek * 10 + cisloDalkac;
         cislic = cislic + 1;
       }
-      irrecv.resume(); // Receive the next value
-    }                  // receive IR
-  } while (!enter);
-  return vysledek;
+      irrecv.resume(); // nacti dalsi hodnotu
+    }
+  } while (!enter); // dokud jsi nedostal enter
+  return vysledek; //vrat, co jsi nacetl (cislo)
 }
 
+// porovna zadane cislo se spravnym vysledkem
+// spravnyVysledek = kolik to melo byt
+// x = pozice na LCD
 void porovnej(int spravnyVysledek, int x) {
   int vysledek = ctiDalkac(x, 1);
   //  Serial.println(vysledek);
@@ -177,13 +192,16 @@ void odcitani() {
   porovnej(rozdil, text.length());
 }
 
+// hlavni smycka
 void loop() {
+  // vymysli si nahodne, co budes zkouset, zda priklad na scitani nebo odcitani
   int co = random(2);
   if (co == 0) {
     scitani();
   } else {
     odcitani();
   }
+  // vymazani casti displeje
   lcd.setCursor(0, 1);
   lcd.print("                ");
 }

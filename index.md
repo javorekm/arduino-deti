@@ -3,7 +3,7 @@ Rozhodl jsem se sepsat projekty, které provádím se svými dětmi a elektronik
 
 [Literatury k Arduinu](https://arduino.cz/tag/ebook/) je všude dost, ale konkrétních příkladů co zkoušet s dětmi už je podstatně méně. Nejsem žádný expert na elektroniku, ale snažím se ji nabídnout i těm nejmenším dětem tak, aby je to bavilo.
 
-> **Pozor, zápisky stále s dětmi stále doplňujeme.**
+> **Pozor, zápisky stále s dětmi doplňujeme.**
 
 ## Obecné 
 Všechny nápady se týkají Arduina, což nutně nemusí být Uno R3, ale klidně i Pro mini a podobné. Pokud jsme použili jiný mikrokontroler, uvádím to. Součátky je možné nakupovat v ČR i v zahraničí (obvykle levněji). SW programujeme v [Arduino IDE](https://www.arduino.cc/en/main/software). Pro kreslení schémat využíváme [Fritzing](http://fritzing.org).
