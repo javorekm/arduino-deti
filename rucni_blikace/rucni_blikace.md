@@ -13,7 +13,7 @@ Základní osahání součástek. Osahání LEDek. Anoda, katoda. Mnemotechnick�
 
 No a pokud se netrefíte, tak se zase tolik nestane. LED nebude svítit, protože je dioda zavřená.
 
-[Připojení LED přes rezistor](https://arduino.cz/proc-musim-u-led-pouzit-rezistor/) (pozor, ať se neusmaží i samotné Arduino, [max proudové zatížení digitálního pinu je 40 mA](http://playground.arduino.cc/Main/ArduinoPinCurrentLimitations)). Osahání si prototypovacího nepájivého pole, vysvětlení vnitřního zapojení pole (koleje s `+` a `-` u velkého, rozdíly u malého), doporučené barvy u vodičů.
+[Připojení LED přes rezistor](https://arduino.cz/proc-musim-u-led-pouzit-rezistor/) (pozor, ať se neusmaží i samotné Arduino, [max proudové zatížení digitálního pinu je 40 mA](http://playground.arduino.cc/Main/ArduinoPinCurrentLimitations), LED často vydrží i více). Osahání si prototypovacího nepájivého pole, vysvětlení vnitřního zapojení pole (koleje s `+` a `-` u velkého, rozdíly u malého), doporučené barvy u vodičů.
 
 Spínače. Úlohy na rozsvícení 1 LED spínačem. 2 LED 1 spínačem, každou zvlášť svým spínačem apod.
 
@@ -23,6 +23,7 @@ Prakticky nic. Začínáme. Neprogramujeme, jen zapojujeme.
 
 ## Foto
 ![Zapojená LED](P1120575.JPG)
+![Baterie](P1370943.JPG)
 
 ## Hardware
 * _Tady nepotřebujeme nutně Arduino, jen je pak potřeba vymyslet nějak jinak napájení pole_
