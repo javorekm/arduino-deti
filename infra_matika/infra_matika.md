@@ -3,10 +3,10 @@
 # Zkoušení matematiky pomocí infra
 Program, který zkouší děti ze sčítání a odčítání v předem zvoleném rozsahu. Příklady se generují náhodně, program dokonce počítá body. Při dobrém výsledku rozsvítí zelenou LED, při chybě červenou (a odečte bod). Je možné mít i záporné body. Výstup přes LCD, vstupem je infračervený dálkový ovladač. 
 
-Tento projekt vám nebude fungovat ihned po zapojení a nahrátí programu. Je potřeba si jej upravit na svůj vlastní dálkový infra ovladač. My jsme vzali ten, který si nejlépe rozuměl s naším přijímačem, sepsali jsme si kódy, kterými jsme chtěli hru ovládat. Budete muset postupovat stejně, nepředpokládám, že byste doma našli náš dálkový ovladač od 20 let staré mikrověže Aiwa :-)
+Tento projekt vám **nebude** fungovat ihned po zapojení a nahrátí programu. Je potřeba si jej upravit na svůj vlastní dálkový infra ovladač. My jsme vzali ten, který si nejlépe rozuměl s naším přijímačem, sepsali jsme si kódy, kterými jsme chtěli hru ovládat. Budete muset postupovat stejně, nepředpokládám, že byste doma našli náš dálkový ovladač od 20 let staré mikrověže Aiwa :-) Program pro zjištění kódů ovladače přikládám.
 
 ## Co je potřeba umět
-Tento projekt je z velké části postaven na pokusech s [LCD](../lcd/lcd.md) a [infra](TODO), tedy je dobré mít nějaké zkušenosti s displejem i s příjmem infra signálu. Z pohledu programování jde taktéž trochu o pokročilejší úlohu, ale dospělá může obtížná místa pomoci dítěti překonat.
+Tento projekt je z velké části postaven na pokusech s [LCD](../lcd/lcd.md) a [infra](TODO), tedy je dobré mít nějaké zkušenosti s displejem i s příjmem infra signálu. Z pohledu programování jde taktéž trochu o pokročilejší úlohu, ale dospělý může obtížná místa pomoci dítěti překonat.
 
 ## Foto
 ![](P1370961.JPG)
@@ -34,6 +34,7 @@ Tento projekt je z velké části postaven na pokusech s [LCD](../lcd/lcd.md) a 
 
 ## Program pro detekci kódů ovladač
 Program slouží k detekci jednotlivých kódů. Je založen na demo programu [IRrecvDump.ino](https://github.com/z3t0/Arduino-IRremote/blob/master/examples/IRrecvDump/IRrecvDump.ino), který vypisuje hodnoty, které detekuje na infrasenzoru. Tímto způsobem je možné zjistit, jaké kódy vysílá váš ovladač, zapsat si je a dále je využít pro ovládání vašich projektů. V případě dálkových ovladačů k zařízením jako je televize nebo rádio je dobré vybírat tlačítka, která je nespustí, aby pak šlo ovládat Arduino v jejich přítomnosti a nezapínat u toho televizi.
+
 [aiwa_infra.ino](aiwa_infra.ino)
 ``` c++
 {% include_relative aiwa_infra.ino %}
