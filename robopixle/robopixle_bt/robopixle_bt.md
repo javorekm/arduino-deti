@@ -23,25 +23,37 @@
 <div markdown="0">
     <video controls>
         <source src="robopixle_bt.mp4" type="video/mp4">
-        Bohužel, váš prohlížeč neumí HTML5 video. <a href="semafor.mp4">Přehrajte si jej jako soubor.</a>
+        Bohužel, váš prohlížeč neumí HTML5 video. <a href="robopixle_bt.mp4">Přehrajte si jej jako soubor.</a>
     </video>
 </div>
 
 ## Hardware
 * kovová krabička od čaje
-* 2 motory (Aliexpress)
+* 2 motory (Aliexpress, specifikace)
 * 2 kola (Aliexpress)
 * dual motor driver LN298N (Aliexpress, specifikace)
-* Bluetooth modul, my jsme použili 
+* Bluetooth modul, my jsme použili modul HC-06 (Aliexpress, specifikace)
 * bateriové napájení, my jsme použili 2× Lion 18650 s držákem, který má i vypínač (Aliexpress)
 * pro zabránění zkratu jsme použili korkovou podložku pod sklenici
 
 ## Jak to funguje
-Používáme knihovnu [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) - to proto, aby nebylo nutné při nahrávání kódu do Arduina odpojovat Bluetooth modul - ten totiž blokuje TX/RX piny a hádá se to. [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) umožňuje Bluetooth připojit na jiné piny Arduina a je tak možné vše provozovat najednou. 
+### Bluetooth
+Jak už jsem zmínil, Bluetooth byla nouzová bezdrátová technologie, protože cílem bylo do večera daného dne zprovoznit bezdrátově Robopixli a infra sensor jsem upálil. Wifi modul ani jiné bezdrátové technologie nebyly zrovna po ruce.
 
-Jen taková nápověda: RX pin Bluetooth přijde zapojit na TX Arduina a TX Bluetooth na RX Arduina. Trochu nás to potrápilo, ale smysl to dává :-)
+Nejdříve je potřeba zařízení napárovat s počítačem, který ho bude ovládat. Párovali jsme s Linuxem, tedy jsme doinstalovali program TODO pro lepší správu Bluetooth zařízení.
+``` bash
+sudo apt-get install TODO
+```
+Párování proběhne standardním způsobem, Robopixli zapnout a počítačem hledat. Výchozí heslo modulu HC-06 je `1234`. 
 
-Krabice pro Robopixli není na výšku dostatečně vysoká, aby mohlo mít Arduino napájení přes konektor (ať už USB nebo jack). Bylo potřeba [prozkoumat jiné možnosti napájení přímo přes piny](https://www.arduino.cc/en/main/arduinoBoardUno). `-` z baterie jde tedy do `GND` a `+` jde do `Vin` pinu.
+TODO Tady asi trochu rozepsat, jak se to na tom linuxu páruje.
+
+Používáme knihovnu [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) - to proto, aby nebylo nutné při nahrávání kódu do Arduina odpojovat Bluetooth modul - ten totiž blokuje TX/RX piny a hádá se to. [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) umožňuje Bluetooth připojit na jiné piny Arduina a provozovat sériovou komunikaci tam, je pak možné vše provozovat pohodlně najednou. 
+
+Jen taková nápověda: RX pin Bluetooth modulu přijde zapojit na TX Arduina a TX Bluetooth na RX Arduina. Trochu nás to potrápilo, ale smysl to dává :-)
+
+### Napájení
+Krabice pro Robopixli není na výšku dostatečně vysoká, aby mohlo mít Arduino napájení přes konektor (ať už USB nebo jack). Bylo potřeba [prozkoumat jiné možnosti napájení přímo přes piny Arduina](https://www.arduino.cc/en/main/arduinoBoardUno). `-` z baterie jde tedy do `GND` a `+` jde do `Vin` pinu.
 
 ## Schéma zapojení
 [robopixle_bt.fzz](robopixle_bt.fzz)
@@ -55,6 +67,16 @@ Krabice pro Robopixli není na výšku dostatečně vysoká, aby mohlo mít Ardu
 ```
 
 ## Program pro ovládací Python konzoli
+Program pro ovládání je velmi jednoduchý, páruje se automaticky na první zařízení, které na Bluetooth síti nalezne, vůbec neinteraguje s uživatelem, že by mu dával na výběr. Že je spárováno je možné poznat jak na displeji počítače (objeví se výzva k zadávání pohybových příkazů), tak na Robopixli, kde přestane blikat modrá LED Bluetooth modulu a začne trvale svítit.
+
+Ovládání Robopixle probíhá pomocí jednoduchých příkazů sestávajících ze 4 písmen:
+* `F` = forward (dopředu), pixle popojede kousek dopředu
+* `B` = backward (dozadu), pixle popojede kousek dozadu
+* `L` = left (vlevo), pixle se otočí asi o 90° vlevo
+* `R` = right (vpravo), pixle se otočí asi o 90° vpravo
+* Enter = odeslání sestavy příkazů Robopixli, ta je začne obratem provádět (připravte si místo na podlaze!)
+Program se přerušuje pomocí `Ctrl+C`.
+
 [robopixle_bt.py](robopixle_bt.py)
 ``` c++
 {% include_relative robopixle_bt.py %}
