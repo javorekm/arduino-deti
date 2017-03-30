@@ -18,14 +18,15 @@ První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ov
 ![](P1120591.JPG)
 ![](P1120597.JPG)
 
+<!--
 ## Video
-
 <div markdown="0">
     <video controls>
         <source src="robopixle_bt.mp4" type="video/mp4">
         Bohužel, váš prohlížeč neumí HTML5 video. <a href="robopixle_bt.mp4">Přehrajte si jej jako soubor.</a>
     </video>
 </div>
+-->
 
 ## Hardware
 * Kovová krabička od čaje (nebo jakákoliv jiná, plastová bude taky dobrá a navíc přes ni projde signál)
@@ -70,6 +71,8 @@ Python Program pro ovládání Robopixle [viz níže](#python).
 Používáme knihovnu [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) - to proto, aby nebylo nutné při nahrávání kódu do Arduina odpojovat Bluetooth modul - ten totiž blokuje TX/RX piny a hádá se to. [SoftwareSerial](https://www.arduino.cc/en/Reference/softwareSerial) umožňuje Bluetooth připojit na jiné piny Arduina a provozovat sériovou komunikaci tam, je pak možné vše provozovat pohodlně najednou. 
 
 Jen taková nápověda: RX pin Bluetooth modulu přijde zapojit na TX Arduina a TX Bluetooth na RX Arduina. Trochu nás to potrápilo, ale smysl to dává :-)
+
+![](P1130150.JPG)
 
 ### L298N dual motor driver
 Dvoumotorový řadič, který si poradí i s vyšším napětím. Umožňuje jednoduše ovládat 2 motory nezásvisle oběma směry. Pomocí PWM je možné ovlivňovat i rychlost motorů.
