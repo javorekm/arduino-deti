@@ -1,8 +1,8 @@
 [← zpět na zápisky z Arduino projektů](../../index.md)
 [← zpět na Robopixli](../robopixle.md)
 
-# Robopixle ovládaná pomocí Bluetooth z Python konzole
-První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ovládaná pomocí Bluetooth a Python konzole. Do budoucna snad předěláme na něco jiného.
+# Robopixle ovládaná pomocí Bluetooth z&nbsp;Python konzole
+První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ovládaná pomocí Bluetooth a&nbsp;Python konzole. Do budoucna snad předěláme na něco jiného.
 
 ## Co je potřeba umět
 * Vrtat vrtačkou do krabice :-)
@@ -40,10 +40,10 @@ První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ov
 
 ## Jak to funguje
 ### Bluetooth
-Jak už jsem zmínil, Bluetooth byla nouzová bezdrátová technologie, protože cílem bylo do večera daného dne zprovoznit bezdrátově Robopixli a poslední infra sensor jsem nešťastnou náhodou upálil. Wifi modul ani jiné bezdrátové technologie nebyly zrovna po ruce. Současně to ale byla i zajímavá příležitost si Bluetooth modul vyzkoušet, protože jsme s ním nikdy ještě nic nedělali.
+Jak už jsem zmínil, Bluetooth byla nouzová bezdrátová technologie, protože cílem bylo do večera daného dne zprovoznit bezdrátově Robopixli a poslední infra sensor jsem nešťastnou náhodou upálil. Wifi modul ani jiné bezdrátové technologie nebyly zrovna po ruce. Současně to ale byla i&nbsp;zajímavá příležitost si Bluetooth modul vyzkoušet, protože jsme s&nbsp;ním nikdy ještě nic nedělali.
 
 #### Bluetooth a Linux
-Nejdříve je potřeba zařízení napárovat s počítačem, který ho bude ovládat. Párovali jsme s Linuxem, tedy jsme pro snadnější práci se zařízeními doinstalovali program [Bluetooth manager](https://apps.ubuntu.com/cat/applications/precise/blueman/).
+Nejdříve je potřeba zařízení napárovat s&nbsp;počítačem, který ho bude ovládat. Párovali jsme s Linuxem, tedy jsme pro snadnější práci se zařízeními doinstalovali program [Bluetooth manager](https://apps.ubuntu.com/cat/applications/precise/blueman/).
 ``` bash
 sudo apt-get update
 sudo apt-get upgrade
@@ -61,7 +61,7 @@ Pravé tlačítko na nalzezeném HC-06, vybrat volbu `pair` (spárovat) a vyplni
 ![](blueman03.png)
 
 #### Bluetooth a Python
-Pro práci s Bluetooth v Pythonu je potřeba nainstalovat knihovnu PyBluez.
+Pro práci s Bluetooth v Pythonu je potřeba nainstalovat knihovnu [PyBluez](https://github.com/karulis/pybluez).
 ``` python
 pip install pybluez
 ```
@@ -98,9 +98,8 @@ Krabice pro Robopixli není na výšku dostatečně vysoká, aby mohlo mít Ardu
 ``` c++
 {% include_relative robopixle_bt.ino %}
 ```
-
-## Program pro ovládací Python konzoli 
 <a name="python"></a>
+## Program pro ovládací Python konzoli 
 Program pro ovládání je velmi jednoduchý, páruje se automaticky na první zařízení, které na Bluetooth síti nalezne, vůbec neinteraguje s uživatelem, že by mu dával na výběr. Že je spárováno je možné poznat jak na displeji počítače (objeví se výzva k zadávání pohybových příkazů), tak na Robopixli, kde přestane blikat modrá LED Bluetooth modulu a začne trvale svítit.
 
 Ovládání Robopixle probíhá pomocí jednoduchých příkazů sestávajících ze 4 písmen:
