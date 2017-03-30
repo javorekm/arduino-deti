@@ -108,7 +108,7 @@ Ovládání Robopixle probíhá pomocí jednoduchých příkazů sestávajícíc
 * `L` = left (vlevo), pixle se otočí asi o 90° vlevo
 * `R` = right (vpravo), pixle se otočí asi o 90° vpravo
 * Enter = odeslání sestavy příkazů Robopixli, ta je začne obratem provádět (připravte si místo na podlaze!)
-Program se přerušuje pomocí `Ctrl+C`.
+* Program se přerušuje pomocí `Ctrl+C`.
 
 [robopixle_bt.py](robopixle_bt.py)
 ``` c++
