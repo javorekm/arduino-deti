@@ -47,3 +47,4 @@ $ sudo usermod -aG dialout <user>
 * Čidlo vlhkosti a teploty do koupelny se zvukovou signalizací pro zavření větracího okna
 * Světelná infra závora pro blbnutí na zahradě
 * Znalostní zkoušetko
+* Měření spotřeby vody v domě v reálném čase
