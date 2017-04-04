@@ -4,7 +4,7 @@
 Jednoduchý ultrazvukový měřič vzdálenosti se zobrazováním hodnot na OLED displeji.
 
 ## Co je potřeba umět
-* ovládání OLED displeje **TODO LINK**
+* ovládání [OLED displeje](../oled/oled.md)
 
 ## Foto
 ![](P1120530.JPG)
@@ -38,7 +38,7 @@ s = t * 0,034
 **Nesmíme ji ale zapomenout vydělit 2**, protože zvuk letěl samozřejmě k překážce a zpět.
 
 ### OLED
-Pro ovládání displeje využíváme knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference).
+Pro ovládání displeje mrkněte na [OLED](../oled/oled.md).
 
 ## Schéma zapojení
 [meric_vzdalenosti.fzz](meric_vzdalenosti.fzz)
@@ -55,5 +55,5 @@ Pro ovládání displeje využíváme knihovnu [u8g](https://github.com/olikraus
 * Při vzdálenosti nad 1&nbsp;m zobrazovat hodnotu v metrech.
 
 ## Poznatky
-Trochu nás potrápil protokol I2C, bylo to první setkání. Trvalo nám, než jsme přišli na to, že Uno R3 má I2C natvrdo na pinech A4 a A5. Měření nám fungovalo celkem spolehlivě do jednoho metru, hodně záleží, od čeho se ultrazvuk odráží. Pokud se zapojení udělá rozumně kompaktní, může s ním dítě oběhnout celý dům.
+Měření nám fungovalo celkem spolehlivě do jednoho metru, hodně záleží, od čeho se ultrazvuk odráží. Pokud se zapojení udělá rozumně kompaktní, může s ním dítě oběhnout celý dům.
 
