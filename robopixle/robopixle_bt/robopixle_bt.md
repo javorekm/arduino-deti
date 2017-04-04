@@ -1,4 +1,5 @@
 [← zpět na zápisky z Arduino projektů](../../index.md)
+
 [← zpět na Robopixli](../robopixle.md)
 
 # Robopixle ovládaná pomocí Bluetooth z&nbsp;Python konzole
