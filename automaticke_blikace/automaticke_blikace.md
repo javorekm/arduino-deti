@@ -22,6 +22,9 @@ Fotografie nezobrazuje přesně typ automatického blikače, který je dále pop
 
 ## Blikač 1
 ### Schéma zapojení
+[blikac.fzz](blikac.fzz)
+
+[![blikac](blikac_bb.png)](blikac.png)
 
 ### Program
 [blikac.ino](blikac.ino) - kód je napsán osmiletým dítětem
@@ -30,6 +33,9 @@ Fotografie nezobrazuje přesně typ automatického blikače, který je dále pop
 ```
 ## Blikač 2
 ### Schéma zapojení
+[blikac2.fzz](blikac2.fzz)
+
+[![blikac2](blikac2_bb.png)](blikac2.png)
 
 ### Program
 [blikac2.ino](blikac2.ino) - kód je napsán osmiletým dítětem
