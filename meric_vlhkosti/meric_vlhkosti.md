@@ -32,10 +32,7 @@ Pro ovládání displeje mrkněte na [OLED](../oled/oled.md).
 [![meric_vlhkosti](meric_vlhkosti_bb.png)](meric_vlhkosti_bb.png)
 
 ## Program
-[meric_vlhkosti.ino](meric_vlhkosti.ino)
-``` c++
-{% include_relative meric_vlhkosti.ino %}
-```
+
 ## Možná vylepšení
 * Lze vyzkoušet i jako jednoduchý detektor lži :-)
 * S měřičem lze např. kontrolovat i výši hladiny v misce Vánočního stromku.
