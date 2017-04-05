@@ -10,10 +10,9 @@ void setup() {
 // vypise vysledek na displeji
 void vypis() {
     u8g.setFont(u8g_font_fub25n);
-    u8g.drawStr(40, 30, "BAF");
+    u8g.drawStr(40, 30, "BAF!");
     u8g.setFont(u8g_font_unifont);
-    u8g.drawStr(45, 50, "");
-  }
+    u8g.drawStr(45, 50, "strasidlo");
 }
 
 void loop() {
@@ -22,5 +21,5 @@ void loop() {
     vypis();
   } while (u8g.nextPage());
 
-  delay(100);
+  delay(1000);
 }

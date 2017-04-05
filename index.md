@@ -27,7 +27,7 @@ $ sudo usermod -aG dialout <user>
 
 ## Ovládnutí displejů
 * [Znakový LCD displej](lcd/lcd.md)
-* OLED
+* [OLED](oled/oled.md)
 
 ## Infra
 * Zmapování domácích vysílačů
