@@ -10,7 +10,7 @@ Rozhodně se hodí vědět, jaký přesně displej vlastně držím v ruce. To u
 * OLED displej s&nbsp;I2C, např. SSD1306 ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170322115850&SearchText=OLED+0.96))
 
 ## Jak to funguje
-OLED displej, který jsme využili má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní I2C. To komunikuje na 2 pinech `SDA` (data) a `SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCK)`. 
+OLED displej, který jsme využili, má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní I2C. To komunikuje na 2 pinech `SDA` (data) a `SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCK)`. 
 
 ![](P1130379.JPG)
 
@@ -51,7 +51,7 @@ const uint8_t veselySmajl[] PROGMEM = {
 };
 ```
 
-Ještě potřebujeme vědět, jaké má obrázek rozměry. Šířku vydělíme osmi a zaokrouhlíme nahoru (= počet bajtů, které jsou na řádku), výšku pak necháme, jak je. Pro vykreslení slouží funkce [drawBitmap()](https://github.com/olikraus/u8glib/wiki/userreference#drawbitmapp).
+Ještě potřebujeme vědět, jaké má obrázek rozměry. Šířku vydělíme osmi a zaokrouhlíme nahoru (= počet bajtů, které jsou na řádku), výšku pak necháme, jak je. Pro vykreslení slouží funkce [drawBitmapP()](https://github.com/olikraus/u8glib/wiki/userreference#drawbitmapp).
 ``` c++
 //sirka obrazku = 65 -> 9 bajtu na radek
 // vyska obrazku = 57
@@ -95,5 +95,5 @@ void loop(void) {
 * Je možné vytvořit jednoduché hry, přeci jen OLED displej dává poněkud sofistikovanější zobrazovací možnosti. Spolu s tlačítky je pak možné vyhodnocovat odpovědi hráče nebo hru přímo ovládat.
 
 ## Poznatky
-* Nejvíce nás potrápila detekce displeje, pak správný konstruktor, nakonec zapojení na SDA/SCK na Arduinu (nevěděl jsem, že jsou na pinech A0/A1). Ovládání přes knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference) bylo naopak už docela lehké.
+* Nejvíce nás potrápila detekce displeje, pak správný konstruktor, nakonec zapojení na SDA/SCK na Arduinu (nevěděl jsem, že jsou na pinech A4/A5). Ovládání přes knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference) bylo naopak už docela lehké.
 * Náš OLED displej je sice maličký, ale je to displej a to dává všem projektům úplně jiný rozměr.
