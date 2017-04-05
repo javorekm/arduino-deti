@@ -10,7 +10,7 @@ Rozhodně se hodí vědět, jaký přesně displej vlastně držím v ruce. To u
 * OLED displej s&nbsp;I2C, např. SSD1306 ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170322115850&SearchText=OLED+0.96))
 
 ## Jak to funguje
-OLED displej, který jsme využili, má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní I2C. To komunikuje na 2 pinech `SDA` (data) a `SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCK)`. 
+OLED displej, který jsme využili, má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní I2C. To komunikuje na 2 pinech `SDA` (data) a `SCL/SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCL/SCK)`. 
 
 ![](P1130379.JPG)
 
@@ -76,7 +76,7 @@ void loop(void) {
 ## Schéma zapojení
 [oled.fzz](oled.fzz)
 
-[![oled](oled_bb.png)](oled.png)
+[![oled](oled_bb.png)](oled_bb.png)
 
 ## Program s textem
 [oled_txt.ino](oled_txt.ino)
