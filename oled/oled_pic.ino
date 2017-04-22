@@ -63,20 +63,25 @@ const uint8_t vesely[] PROGMEM = {
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0
 };
 
+int sirka_displeje = 128;
+int vyska_displeje = 64;
+
+int sirka_obrazku = 65;
+int vyska_obrazku = 57;
+
 // vycentrovane souradnice pro obrazek
-int x = (128 - 65) / 2;
-int y = (64 - 57) / 2;
+int x = (sirka_displeje - sirka_obrazku) / 2;
+int y = (vyska_displeje - vyska_obrazku) / 2;
 
 void setup() {
   // nic
-
 }
 
 // vypise vysledek na displeji
 void vykresli() {
   //sirka obrazku = 65 -> 9 bajtu na radek
   // vyska obrazku = 57
-  drawBitmapP(x, y, 9, 57, vesely);
+  drawBitmapP(x, y, 9, vyska_obrazku, vesely);
 }
 
 void loop() {
