@@ -5,7 +5,23 @@ Blikání LED podobné [K.I.T.T. ovi](https://www.google.com/search?q=k.i.t.t.&c
 
 ## Co je potřeba umět
 Základy zapojování LED. Základní programové konstrukce pro ovládání digitálních pinů Arduina. Cykly jsou výhodou.
+
 ## Foto
+![](P1130683.JPG)
+![](P1130684.JPG)
+![](P1130685.JPG)
+![](P1130686.JPG)
+![](P1130687.JPG)
+
+## Video
+
+<div markdown="0">
+    <video controls>
+        <source src="knight_rider.mp4" type="video/mp4">
+        Bohužel, váš prohlížeč neumí HTML5 video. <a href="knight_rider.mp4">Přehrajte si jej jako soubor.</a>
+    </video>
+</div>
+
 
 ## Hardware
 * dostatek různě barevných LED, některé se asi spálí
