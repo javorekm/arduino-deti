@@ -11,15 +11,15 @@ void loop() {
   // problikni LED na pinech 2 az 6
   for (int i = 2; i < 7; i++) {
     digitalWrite(i, HIGH);
-    delay(100);
+    delay(50);
     digitalWrite(i, LOW);
-    delay(100);
+    delay(50);
   }
   // problikni LED na pinech 5 az 3
   for (int i = 5; i > 2; i--) {
     digitalWrite(i, HIGH);
-    delay(100);
+    delay(50);
     digitalWrite(i, LOW);
-    delay(100);
+    delay(50);
   }
 }
