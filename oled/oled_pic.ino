@@ -79,9 +79,8 @@ void setup() {
 
 // vypise vysledek na displeji
 void vykresli() {
-  //sirka obrazku = 65 -> 9 bajtu na radek
-  // vyska obrazku = 57
-  drawBitmapP(x, y, 9, vyska_obrazku, vesely);
+  //sirka obrazku = pocet bajtu na radek
+  u8g.drawBitmapP(x, y, (int)(sirka_obrazku / 8 + 0.5), vyska_obrazku, vesely);
 }
 
 void loop() {
