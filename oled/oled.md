@@ -90,6 +90,9 @@ void loop(void) {
 {% include_relative oled_pic.ino %}
 ```
 
+![](P1130719.JPG)
+![](P1130726.JPG)
+
 ## Možná vylepšení
 * Jakékoliv hrátky s displejem. Kombinace s [ručními blikači](../rucni_blikace/rucni_blikace.md), [automatickými blikači](../automaticke_blikace/automaticke_blikace.md), apod.
 * Je možné vytvořit jednoduché hry, přeci jen OLED displej dává poněkud sofistikovanější zobrazovací možnosti. Spolu s tlačítky je pak možné vyhodnocovat odpovědi hráče nebo hru přímo ovládat.
