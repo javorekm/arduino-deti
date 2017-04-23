@@ -79,8 +79,13 @@ void setup() {
 
 // vypise vysledek na displeji
 void vykresli() {
-  //sirka obrazku = pocet bajtu na radek
-  u8g.drawBitmapP(x, y, (int)(sirka_obrazku / 8 + 0.5), vyska_obrazku, vesely);
+  //x = x souradnice, kde zacne kreslit obrazek (0;0 - levy horni roh)
+  //y = y souradnice, kde zacne kreslit obrazek (0;0 - levy horni roh)
+  //pocet bajtu na sirku obrazku
+  //vyska obrazku
+  //obrazek
+  int pocet_bajtu_sirka_obrazku = (int)(sirka_obrazku / 8.0 + 0.5);
+  u8g.drawBitmapP(x, y, pocet_bajtu_sirka_obrazku, vyska_obrazku, vesely);
 }
 
 void loop() {
