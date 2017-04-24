@@ -1,9 +1,11 @@
 # Naše Arduino projekty
-Rozhodl jsem se sepsat projekty, které provádím se svými dětmi a elektronikou. Úkoly jsou různě obtížné, začali jsme někdy v 5 letech, postupně se prokousáváme dále, jak věkem, tak obsahem.
+**Rozhodl jsem se sepsat projekty, které provádím se svými dětmi a elektronikou.** Úkoly jsou různě obtížné, začali jsme někdy v 5 letech, postupně se prokousáváme dále, jak věkem, tak obsahem.
 
-[Literatury k Arduinu](https://arduino.cz/tag/ebook/) je všude dost, ale konkrétních příkladů co zkoušet s dětmi už je podstatně méně. Nejsem žádný expert na elektroniku, ale snažím se ji nabídnout i těm nejmenším dětem tak, aby je to bavilo.
+[Literatury k Arduinu](https://arduino.cz/tag/ebook/) je všude dost, ale konkrétních příkladů co zkoušet s dětmi, už je podstatně méně. Nejsem žádný expert na elektroniku, ale snažím se ji nabídnout i těm nejmenším dětem tak, aby je to bavilo.
 
-> **Pozor, zápisky stále s dětmi doplňujeme.**
+Jde o rodinné zápisky, které slouží primárně proto, aby se mé děti mohly k úlohám vracet, respektive je sdílet se svými kamarády a podobně.
+
+> **Pozor, zápisky stále s dětmi doplňujeme!**
 
 ![](uvod.jpg)
 
@@ -13,6 +15,8 @@ Všechny nápady se týkají Arduina, což nutně nemusí být Uno R3, ale klidn
 Ve všech projektech popisuji seznam součástek, ale Arduino board mezi nimi chybí, nechtěl jsem to jen neustále opakovat - prakticky všechny jsou za využití Arduina. Stejně tak neuvádím, že potřebujeme k projektu vodiče, nepájivé pole či napájení. Potřebujeme vždy.
 
 ## Řešené potíže
+Sem si zapisujeme, co nás kde potkalo. Převážně jde o potíže s operačním systémem a HW počítače.
+
 ### "Permission denied" při pokusu nahrát program do Arduina na Linuxu
 Uživatel musí být členem skupiny `dialout`.
 ``` bash
