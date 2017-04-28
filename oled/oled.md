@@ -10,7 +10,7 @@ Rozhodně se hodí vědět, jaký přesně displej vlastně držím v ruce. To u
 * OLED displej s&nbsp;I2C, např. SSD1306 ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170322115850&SearchText=OLED+0.96))
 
 ## Jak to funguje
-OLED displej, který jsme využili, má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní I2C. To komunikuje na 2 pinech `SDA` (data) a `SCL/SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCL/SCK)`. 
+OLED displej, který jsme využili, má úhlopříčku 0,96" a rozlišení 128×64 pixelů. Připojili jsme ho přes rozhraní [I2C](https://learn.sparkfun.com/tutorials/i2c). To komunikuje na 2 pinech `SDA` (data) a `SCL/SCK` (clock). Tyto má Arduino Uno schováno na analogových  pinech `A4 (SDA)` a `A5 (SCL/SCK)` ([zdroj](https://www.arduino.cc/en/reference/wire)). 
 
 ![](P1130379.JPG)
 
@@ -51,11 +51,20 @@ const uint8_t veselySmajl[] PROGMEM = {
 };
 ```
 
+Klíčové slovo `PROGMEM` zde zařídí, že celá bitmapa nebude uložena v operační paměti Arduina - té máme totiž obvykle velmi málo (Uno&nbsp;R3 = 2&nbsp;KiB), ale protože se nebude v programu měnit (je konstantní), může být umístěna do tzv. flash paměti, kde leží i náš program (Uno&nbsp;R3 = 32&nbsp;KiB). Více o rozdělení a druzích pamětí si lze [přečíst zde](https://www.arduino.cc/en/tutorial/memory), práce s PROGMEM je [vysvětlena zde](https://www.arduino.cc/en/Reference/PROGMEM). 
+
 Ještě potřebujeme vědět, jaké má obrázek rozměry. Šířku vydělíme osmi a zaokrouhlíme nahoru (= počet bajtů, které jsou na řádku), výšku pak necháme, jak je. Pro vykreslení slouží funkce [drawBitmapP()](https://github.com/olikraus/u8glib/wiki/userreference#drawbitmapp).
 ``` c++
 //sirka obrazku = 65 -> 9 bajtu na radek
 // vyska obrazku = 57
 drawBitmapP(5, 5, 9, 57, veselySmajl);
+```
+
+Možná někoho napadne, proč není potřeba následně ve volání `drawBitmapP` kopírovat data bitmapy z flash paměti do operační (pomocí nějaké z metod rozhraní [pgmspace](http://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html)), když to návody u klíčového slova `PROGMEM` [ukazují](https://www.arduino.cc/en/Reference/PROGMEM). Je to proto, že knihovna [u8g](https://github.com/olikraus/u8glib/wiki/userreference) již [předpokládá](https://github.com/olikraus/u8glib/blob/e2d100959ca067bd0800ddb39f8043cefc5df8b8/csrc/u8g_bitmap.c#L68), že bitmapu ve flash paměti máme.
+
+Ukázka z kódu knihovny v těle `drawBitmapP`
+``` c++
+u8g_Draw8Pixel(u8g, x, y, 0, u8g_pgm_read(bitmap));
 ```
 
 Knihovna [u8g](https://github.com/olikraus/u8glib/wiki/userreference) využívá koncept redraw - je potřeba neustále obnovovat stav displeje [opakovaným překreslováním](https://github.com/olikraus/u8glib/wiki/tpictureloop).
@@ -64,7 +73,7 @@ void loop(void) {
   u8g.firstPage();  
   do {
     draw();
-  } while( u8g.nextPage() );
+  } while(u8g.nextPage());
 
   // po nejake dobe prekresli displej
   delay(1000);
@@ -98,5 +107,6 @@ void loop(void) {
 * Je možné vytvořit jednoduché hry, přeci jen OLED displej dává poněkud sofistikovanější zobrazovací možnosti. Spolu s tlačítky je pak možné vyhodnocovat odpovědi hráče nebo hru přímo ovládat.
 
 ## Poznatky
-* Nejvíce nás potrápila detekce displeje, pak správný konstruktor, nakonec zapojení na SDA/SCK na Arduinu (nevěděl jsem, že jsou na pinech A4/A5). Ovládání přes knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference) bylo naopak už docela lehké.
+* Nejvíce nás potrápila detekce displeje, pak správný konstruktor, nakonec zapojení na SDA/SCK na Arduinu (nevěděl jsem, že jsou na pinech A4/A5). Ovládání přes knihovnu [u8g](https://github.com/olikraus/u8glib/wiki/userreference) bylo naopak už docela lehké. Pak jsem se potrápil při vysvětlování `PROGMEM`, ale je to zase hezká příležitost jak objasnit dětem trochu paměťové uspořádání Arduina.
 * Náš OLED displej je sice maličký, ale je to displej a to dává všem projektům úplně jiný rozměr.
+* Rozhraní `I2C` není zrovna nejrychlejší (400&nbsp;kHz), chtělo by to `SPI` (až 20&nbsp;MHz), ale to náš konkrétní displej zdá se neumí. Takže rychlé animace asi nebudou. 
