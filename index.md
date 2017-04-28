@@ -38,7 +38,6 @@ $ sudo usermod -aG dialout <user>
 ## Infra
 * Zmapování domácích vysílačů
 * Infra a LED
-* [Zkoušení matematiky](infra_matika/infra_matika.md)
 
 ## Čidla
 * [Teploměr se 7 segmentovým LED](teplomer/teplomer.md)
@@ -46,11 +45,18 @@ $ sudo usermod -aG dialout <user>
 * Vlhkost půdy
 * Vlhkost vzduchu, teplota, nadmořská výška
 
+## Ovládání
+* Joystick
+
+## Hry
+* [Zkoušení matematiky](infra_matika/infra_matika.md)
+* Znalostní zkoušetko
+
 ## [Robopixle](robopixle/robopixle.md)
 
 ## Plánujeme
-* Domovní zvonek na střídavých 20V se dvěma melodiemi
+_(jinými slovy máme rozmyšleno, součástky jsou na cestě a nebo zrovna děláme něco jiného)_
+* Domovní zvonek na střídavých 20&nbsp;V se dvěma melodiemi
 * Čidlo vlhkosti a teploty do koupelny se zvukovou signalizací pro zavření větracího okna
 * Světelná infra závora pro blbnutí na zahradě
-* Znalostní zkoušetko
 * Měření spotřeby vody v domě v reálném čase
