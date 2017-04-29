@@ -46,7 +46,7 @@ $ sudo usermod -aG dialout <user>
 * Vlhkost vzduchu, teplota, nadmořská výška
 
 ## Ovládání
-* Joystick
+* [Joystick](joystick/joystick.md)
 
 ## Hry
 * [Zkoušení matematiky](infra_matika/infra_matika.md)
