@@ -24,7 +24,7 @@ int nx = 0;
 int ny = 0;
 
 void setup() {
-//  Serial.begin(9600);
+  //  Serial.begin(9600);
   pinMode(vx_pin, INPUT);
   pinMode(vy_pin, INPUT);
   pinMode(switch_pin, INPUT);
@@ -33,12 +33,12 @@ void setup() {
 }
 
 void vykresli(int x, int y) {
-  u8g.setColorIndex(1); 
+  u8g.setColorIndex(1);
   u8g.drawPixel(x, y);
 }
 
 void smaz(int x, int y) {
-  u8g.setColorIndex(0); 
+  u8g.setColorIndex(0);
   u8g.drawPixel(x, y);
 }
 
@@ -54,15 +54,15 @@ int dejRychlost(int joystick) {
   }
   return 0;
 }
-  
+
 void loop() {
   // precti stav joysticku
   int vx = analogRead(vx_pin);
   int vy = analogRead(vy_pin);
   int sw = digitalRead(switch_pin);
-//  Serial.println(sw);
+  //  Serial.println(sw);
 
-// detekce, zda je stisknuty spinac, stisknuto = LOW
+  // detekce, zda je stisknuty spinac, stisknuto = LOW
   if (sw == LOW) {
     if (pozdrav == 0) {
       pozdrav = 1;
@@ -71,7 +71,7 @@ void loop() {
     }
   }
 
-// zobraz pozdrav
+  // zobraz pozdrav
   if (pozdrav == 1) {
     u8g.setFont(u8g_font_osb18);
     // vykresli napis
@@ -79,9 +79,9 @@ void loop() {
     do {
       u8g.drawStr(20, 25, "A H O J");
       u8g.drawStr(55, 55, ":-)");
-    } while (u8g.nextPage());  
+    } while (u8g.nextPage());
   } else {
-    // spocitej posun 
+    // spocitej posun
     nx = x + dejRychlost(vx);
     ny = y + dejRychlost(vy);
     // ohraniceni displejem, kontrola rozsahu, aby to nepodlezlo
@@ -99,16 +99,15 @@ void loop() {
     }
     // pokud se nekam pohnul, tak smaz stary bodik
     if ((nx != x) || (ny != y)) {
-        smaz(x, y);
+      smaz(x, y);
     }
     // vykresli novy
     u8g.firstPage();
     do {
-      vykresli(nx, ny);     
+      vykresli(nx, ny);
     } while (u8g.nextPage());
     x = nx;
     y = ny;
   }
   delay(5);
 }
-
