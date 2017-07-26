@@ -41,6 +41,7 @@ Pokročilejší úloha s využitím LED, samostatně vytvořit semafor. Míru sa
 ```
 ## Možná vylepšení
 * Doplnění klasického auto-semaforu ještě o semafor pro chodce.
+* Doplnění klasického auto-semaforu ještě o semafor pro chodce s přihlašovacím tlačítkem.
 * Doplnění semaforu(ů) o bezpečnostní chvíle, kdy svítí všude červená (pro přeběhlíky).
 * Doplnění semaforu(ů) o blikání před koncem zelené (upozornění, že brzy skočí červená).
 * Pro železniční nadšence je možné vyrobit např. nějaké [návěstidlo](https://www.google.com/search?q=odjezdov%C3%A9+n%C3%A1v%C4%9Bstidlo&client=firefox-b&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjeoaqExufSAhVlIpoKHaayDeIQ_AUICCgB&biw=1600&bih=793#tbm=isch&q=odjezdov%C3%A9+n%C3%A1v%C4%9Bstidlo+barvy&*&imgrc=).
