@@ -66,7 +66,7 @@ Jde o hromadu LED, které jsou uspořádány do nějakého obrazce. Obvykle hovo
 
 Tady jen poznámka ke kódu níže - v konstantě pro jednotlivé číslice máme, že hodnota 1 = LED svítí, ale výše jsem uvedl, že aby svítila, musí mít na anodě `HIGH` a na katodě `LOW`. A protože naše LED už `HIGH` na svou anodu "dostaly", musíme jim pro rozsvícení dodat `LOW` na katodu. Tedy nulu do posuvného registru tam, kde mají svítit. Proto se v kódu objevuje [binární negace](https://www.arduino.cc/en/Reference/BitwiseXorNot) v podobě `~`, která nám přehodí všechny 0 na 1 a obráceně. Pro displeje se společnou katodou to není potřeba, tam posíláme pro rozsvícení na anodu jedničky.
 
-**Pozor i 7 segmentový displej vyžaduje zapojení před rezistory!**
+**Pozor i 7/8 segmentový displej vyžaduje zapojení přes rezistory!**
 
 ### Posuvný registr 74HC595
 Posuvný registr nám dovoluje obsluhovat např. více LED než máme na Arduinu pinů. Zjednodušeně do něj nacpeme seriově potřebné informace a pak mu dáme signál, že to má najednou (paralelně) přenést na své datové výstupy (LED). 
