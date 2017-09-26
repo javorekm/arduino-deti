@@ -1,6 +1,6 @@
 [← zpět na zápisky z Arduino projektů](../../index.md)
 
-[← zpět na Robopixli](../robopixle.md)
+[← zpět na Robopixli](../maplebot.md)
 
 # Robopixle ovládaná pomocí Bluetooth z&nbsp;Python konzole
 První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ovládaná pomocí Bluetooth a&nbsp;Python konzole. Do budoucna snad předěláme na něco jiného.
