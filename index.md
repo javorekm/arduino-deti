@@ -52,7 +52,7 @@ $ sudo usermod -aG dialout <user>
 * [Zkoušení matematiky](infra_matika/infra_matika.md)
 * Znalostní zkoušetko
 
-## [Robopixle](robopixle/robopixle.md)
+## [Maplebot](maplebot/maplebot.md)
 
 ## Plánujeme
 _(jinými slovy máme rozmyšleno, součástky jsou na cestě a nebo zrovna děláme něco jiného)_

@@ -117,7 +117,7 @@ Ovládání Robopixle probíhá pomocí jednoduchých příkazů sestávajícíc
 ```
 
 ## Možná vylepšení
-Možných vylepšení je mnoho a [chystáme je](../robopixle.md).
+Možných vylepšení je mnoho a [chystáme je](../maplebot.md).
 
 ## Poznatky
 * Jak je nakonec z fotek vidět, je dobré si dopředu vše proměřit, zda se do krabice robopixle vejde. Nám to vyšlo tak tak. Uno je velké, motory také a o driveru motorů s velkým chladičem ani nemluvě.
