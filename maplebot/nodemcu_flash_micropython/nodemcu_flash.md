@@ -80,7 +80,7 @@ Detected flash size: 4MB
 Hard resetting...
 ```
 
-### 7. Zjistit mac adresu
+### 7. Zjistit MAC adresu
 Můžeme si nechat prozradit i MAC adresu zařízení.
 ``` shell
 python esptool.py --port <port> read_mac
@@ -164,6 +164,7 @@ Hard resetting...
 Je dobré udělat test. Prvních několik flashů se mi nepovedlo (nenastavil jsem `--flash-mode`) a nikdo neprotestoval (ani NodeMCU, ani esptool). REPL je zkratka pro Read Evaluate Print Loop, v zásadě to pro nás znamená vzdálenou konzoli. Pokusíme se dostat do Micropython interpretu nahraného v NodeMCU.
 
 Do REPL NodeMCU se dá přes USB kabel přihlásit libovolným sériovým terminálem. 
+
 **Windows**
 Oblíbený terminál [putty](http://www.putty.org/) s parametry:
 * typ připojení: serial
@@ -187,7 +188,7 @@ Další informace bychom získali třeba
 ![](putty_help.png)
 
 **Linux**
-Lze použít např. terminál [screen](https://www.gnu.org/software/screen/manual/screen.html) či třeba [picocom](http://manpages.ubuntu.com/manpages/zesty/man8/picocom.8.html).
+* Lze použít např. terminál [screen](https://www.gnu.org/software/screen/manual/screen.html) či třeba [picocom](http://manpages.ubuntu.com/manpages/zesty/man8/picocom.8.html).
 ```shell
 screen /dev/ttyUSB0 115200
 ```
