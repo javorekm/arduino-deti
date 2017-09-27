@@ -9,6 +9,10 @@ Jde o rodinné zápisky, které slouží primárně proto, aby se mé děti mohl
 
 ![](uvod.jpg)
 
+## Licence
+
+[![Licence Creative Commons](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) Toto dílo podléhá licenci [Creative Commons Uveďte původ 4.0 Mezinárodní License](http://creativecommons.org/licenses/by/4.0/).
+
 ## Obecné 
 Všechny nápady se týkají Arduina, což nutně nemusí být Uno R3, ale klidně i Pro mini a podobné. Pokud jsme použili jiný mikrokontroler, uvádím to. Součátky je možné nakupovat v ČR i v zahraničí (obvykle levněji). SW programujeme v [Arduino IDE](https://www.arduino.cc/en/main/software). Pro kreslení schémat využíváme [Fritzing](http://fritzing.org).
 
