@@ -29,9 +29,9 @@ Aneb někdy taky toolchain. SW nářadí, které bude potřeba.
 * [Micropython firmware](http://micropython.org/download#esp8266)
 
 ## Postup
-1. ### Stáhnout  a nainstalovat [NodeMCU driver](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers), aby ho rozpoznal operační systém
-2. ### Připojit NodeMCU k počítači přes microUSB kabel
-3. ### Zjistit, na jakém portu se objevil
+### 1. Stáhnout  a nainstalovat [NodeMCU driver](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers), aby ho rozpoznal operační systém
+### 2. Připojit NodeMCU k počítači přes microUSB kabel
+### 3. Zjistit, na jakém portu se objevil
 **Windows** (nemám bohužel českou verzi)
 * Control panels/Device manager
 * Pod záložkou Ports (COM & LPT) najít, kde ho máme
@@ -43,16 +43,16 @@ Aneb někdy taky toolchain. SW nářadí, které bude potřeba.
 ls -l /dev/tty*
 ```
 
-4. ### Nainstalovat [Python](https://www.python.org/downloads/)
+### 4. Nainstalovat [Python](https://www.python.org/downloads/)
 Brát verzi 3.x, na Linuxu velmi pravděpodobně už Python je. 
 
-5. ### Získat Esptool
+### 5.  Získat Esptool
 Nástroj napsaný v pythonu pro flashování ESP8266 z příkazové řádky. Lze ho stáhnout přímo z [Githubu](https://github.com/espressif/esptool) a nebo je možné ho samozřejmě nainstalovat přímo přes pip:
 ``` shell
 pip install esptool
 ```
 
-6. ### Zjistit typ čipu
+### 6. Zjistit typ čipu
 Pokud jsme zvědaví, můžeme zjistit typ čipu.
 ``` shell
 python esptool.py --port <port> flash_id
@@ -80,7 +80,7 @@ Detected flash size: 4MB
 Hard resetting...
 ```
 
-7. ### Zjistit mac adresu
+### 7. Zjistit mac adresu
 Můžeme si nechat prozradit i MAC adresu zařízení.
 ``` shell
 python esptool.py --port <port> read_mac
@@ -97,18 +97,18 @@ MAC: 70:01:88:20:22:21
 Hard resetting...
 ```
 
-8. ### Stáhnout [Micropython firmware](http://micropython.org/download#esp8266) pro ESP8266
+### 8. Stáhnout [Micropython firmware](http://micropython.org/download#esp8266) pro ESP8266
 Stahujeme bin soubor.
 
 * Pokud bychom chtěli flashnout (zpátky) [inpterpret Lua](https://github.com/nodemcu/nodemcu-firmware), je nutné si soubor sestavit ve vlastní režii ze zdrojáků a nebo si ho nechat sestavit on demand službou [NodeMCU custom builds](https://nodemcu-build.com/) - a vybrat si jen moduly, které potřebujeme.
 * Můžeme také [NodeMCU programovat jako Arduino](https://github.com/esp8266/Arduino/) v jazyce Wiring (pak je možné ho programovat i v Arduino IDE). Board manager v Arduino IDE se pak postará o to, že sestaví pokaždé celý firmware ESP8266 SDK spolu s naším programem a flashuje vše do NodeMCU. To znamená, že jednoduchý program na bliknutí LED pak může mít i 250 KiB.
 
-9. ### Přepnout NodeMCU do flash režimu
+### 9. Přepnout NodeMCU do flash režimu
 Některé návody uvádí, že je potřeba vždy uvést čip do flash režimu pomocí tlačítek Flash a Reset. Jiné pak doplňují, že je to hodně hardwarově závislé a pokud má deska USB konektor, USB-serial konvertor a DTR + RTS piny, tak že si to [vše obstará sama bez naší asistence](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html#deploying-the-firmware). 
 
 [NodeMCU se umí samo přepnout do flash režimu](https://nodemcu.readthedocs.io/en/master/en/flash/#putting-device-into-flash-mode). Tento krok tedy uvádím jen pro úplnost. Netřeba nic dělat.
 
-10. ### Smazat obsah flash
+### 10. Smazat obsah flash
 Některé návody se o tom nezmiňují, jiné [píší o tom](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html#deploying-the-firmware), že mnoho potíží je zapřičiněno tím, že předchozí firmware není řádně vymazán. Proto doporučuji nejdříve flash smazat. 
 ``` shell
 python esptool.py --port <port> erase_flash
@@ -126,7 +126,7 @@ Chip erase completed successfully in 5.3s
 Hard resetting...
 ```
 
-10. ### Zapsat nový firmware do NodeMCU
+### 11. Zapsat nový firmware do NodeMCU
 ``` shell
 python esptool.py --baud 115200 --port <port> write_flash --flash_mode dio 0x00000 <micropython_esp_firmware>.bin
 ```
@@ -160,7 +160,7 @@ Leaving...
 Hard resetting...
 ```
 
-### 11. Test Micropython firmware pomocí konzole REPL
+### 12. Test Micropython firmware pomocí konzole REPL
 Je dobré udělat test. Prvních několik flashů se mi nepovedlo (nenastavil jsem `--flash-mode`) a nikdo neprotestoval (ani NodeMCU, ani esptool). REPL je zkratka pro Read Evaluate Print Loop, v zásadě to pro nás znamená vzdálenou konzoli. Pokusíme se dostat do Micropython interpretu nahraného v NodeMCU.
 
 Do REPL NodeMCU se dá přes USB kabel přihlásit libovolným sériovým terminálem. 
@@ -197,7 +197,7 @@ picocom -b 115200 /dev/ttyUSB0
 
 ![](screen_ubuntu.png)
 
-### 12. Test Micropython firmware pomocí konzole WebREPL
+### 13. Test Micropython firmware pomocí konzole WebREPL
 Přihlásit se do Micropython konzole lze samozřejmě i vzduchem. Micropython nastartuje automaticky Wifi AP, pokud si nepřejeme něco jiného.
 
 ![](wifi.png)
@@ -207,7 +207,7 @@ Pokud se přihlásíme do jeho sítě, můžeme se tak dostat pomocí WebREPL do
 Nejdříve je však potřeba WebREPL povolit, jelikož výchozí nastavení je vypnuto.
 
 1. NodeMCU připojit přes USB kabel.
-1. Přihlásit se seriovým terminálem do REPL (viz bod 11)
+1. Přihlásit se seriovým terminálem do REPL (viz bod 12)
 1. Z konzole spustit: 
 ```python
 import webrepl_setup
