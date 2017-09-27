@@ -165,7 +165,7 @@ Je dobré udělat test. Prvních několik flashů se mi nepovedlo (nenastavil js
 
 Do REPL NodeMCU se dá přes USB kabel přihlásit libovolným sériovým terminálem. 
 **Windows**
-Oblíbený terminál [putty]() s parametry:
+Oblíbený terminál [putty](http://www.putty.org/) s parametry:
 * typ připojení: serial
 * port: náš port, přes který je NodeMCU připojen na USB
 * rychlost 115200
