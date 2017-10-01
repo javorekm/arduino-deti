@@ -42,6 +42,10 @@ Aneb někdy taky toolchain. SW nářadí, které bude potřeba.
 ``` shell
 ls -l /dev/tty*
 ```
+nebo ještě lépe
+``` shell
+dmesg | tail
+```
 
 ### 4. Nainstalovat [Python](https://www.python.org/downloads/)
 Brát verzi 3.x, na Linuxu velmi pravděpodobně už Python je. 
