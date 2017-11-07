@@ -5,10 +5,10 @@
 # Jak rozchodit konzoli Micropythonu
 * obsah
 {:toc}
+{::options toc_levels="2..4" /}
 
 Poté, co [zdárně nahrajeme Micropython do NodeMCU](../nodemcu_flash_micropython/nodemcu_flash.md), bychom se potřebovali nejlépe nějak přihlásit k NodeMCU do Python konzole. V zásadě existují 3 způsoby: REPL, WebREPL AP, WebREPL klient. REPL je zkratka pro Read Evaluate Print Loop a v zásadě to pro nás znamená tu vzdálenou konzoli. 
 
-<a name="repl"></a>
 ## REPL
 Do REPL NodeMCU se dostaneme přes USB kabel libovolným sériovým terminálem. 
 
