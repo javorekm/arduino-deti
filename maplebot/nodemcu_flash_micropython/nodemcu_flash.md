@@ -5,6 +5,9 @@
 # Flash firmware Micropythonu do NodeMCU (ESP8266)
 _Tuto sekci jsem prováděl bez dětí. Flashování firmware není zrovna záživná záležitost. Nicméně jednou se k ní děti třeba vrátí, až si budou chtít přeflashovat svoje NodeMCU :-)_
 
+* obsah
+  {:toc}
+
 Pořídil jsem několik [NodeMCU devkitů](https://github.com/nodemcu/nodemcu-devkit-v1.0) šlapajících na ESP8266. Tyto čipy díky svému výkonu (v základu 80 MHz, [lze zvýšit až na 160 MHz](http://www.instructables.com/id/ESP8266-NodeMCU-CPU-Speed-Test/) - což i výkon zvýší asi dvojnásobně) zvládají nejen Wifi, ale i interpretované jazyky. Obvykle se nabízí ke koupi s předchystaným interpretem jazyka [Lua](https://www.lua.org/) (vlastně spíš [eLua](http://www.eluaproject.net/)), ale je možné jej vyměnit i za [Micropython](https://micropython.org/) nebo Arduino (programujeme pak v jazyce Wiring, který je velmi podobný C/C++).
 
 ![](P1210248.JPG)
@@ -164,66 +167,9 @@ Leaving...
 Hard resetting...
 ```
 
-### 12. Test Micropython firmware pomocí konzole REPL
-Je dobré udělat test. Prvních několik flashů se mi nepovedlo (nenastavil jsem `--flash-mode`) a nikdo neprotestoval (ani NodeMCU, ani esptool). REPL je zkratka pro Read Evaluate Print Loop, v zásadě to pro nás znamená vzdálenou konzoli. Pokusíme se dostat do Micropython interpretu nahraného v NodeMCU.
+### 12. Test
+Je dobré udělat test. Prvních několik flashů se mi nepovedlo (nenastavil jsem `--flash-mode`) a nikdo neprotestoval (ani NodeMCU, ani `esptool`). 
 
-Do REPL NodeMCU se dá přes USB kabel přihlásit libovolným sériovým terminálem. 
+Flash Micropythonu se nejlépe ověří přihlášením do konzole Micropythonu. Jsou v zásadě 3 způsoby, REPL, WebREPL AP a WebREPL klient.
 
-**Windows**
-Oblíbený terminál [putty](http://www.putty.org/) s parametry:
-* typ připojení: serial
-* port: náš port, přes který je NodeMCU připojen na USB
-* rychlost 115200
-* data bits 8, stop bits 1, no parity, no flow
-
-![](putty_config.png)
-
-Po připojení je někdy potřeba stisknout tlačítko `Reset` na NodeMCU. Prvních zmatených znaků si nevšímáme a do konzole píšeme:
-```python
->>> print("Hura, zije to!")
-```
-![](putty_hura.png)
-
-Další informace bychom získali třeba
-```python
->>> help()
-```
-
-![](putty_help.png)
-
-**Linux**
-* Lze použít např. terminál [screen](https://www.gnu.org/software/screen/manual/screen.html) či třeba [picocom](http://manpages.ubuntu.com/manpages/zesty/man8/picocom.8.html).
-```shell
-screen /dev/ttyUSB0 115200
-```
-```shell
-picocom -b 115200 /dev/ttyUSB0
-```
-
-![](screen_ubuntu.png)
-
-### 13. Test Micropython firmware pomocí konzole WebREPL
-Přihlásit se do Micropython konzole lze samozřejmě i vzduchem. Micropython nastartuje automaticky Wifi AP, pokud si nepřejeme něco jiného.
-
-![](wifi.png)
-
-Pokud se přihlásíme do jeho sítě, můžeme se tak dostat pomocí WebREPL do konzole Micropythonu. WebREPL je speciální Javascript app, kterou si můžeme [stáhnout lokálně](https://github.com/micropython/webrepl), ale která běží i [hostovaná online](http://micropython.org/webrepl/).
-
-Nejdříve je však potřeba WebREPL povolit, jelikož výchozí nastavení je vypnuto.
-
-1. NodeMCU připojit přes USB kabel.
-1. Přihlásit se seriovým terminálem do REPL (viz bod 12)
-1. Z konzole spustit: 
-```python
-import webrepl_setup
-```
-4. Povolíme WebREPL a nastavíme heslo do WebREPL konzole.
-1. Odpojit NodeMCU od počítače. Vyhledat jiný zdroj napájení pro NodeMCU, třeba USB adaptér.
-1. Přihlásíme se do wifi sítě NodeMCU - [heslo do Micropython wifi je](http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html#wifi) `micropythoN` (pozor, připojením ztratíme internet).
-1. Jdeme do WebREPL konzole, IP adresa našeho malého AP je `192.168.4.1`. Connect.
-1. Zadat naše heslo a jsme tam.
-
-![](web_repl.png)
-
-Jak se dostat do WebREPL z domácí wifi sítě bez nutnosti se připojovat na AP NodeMCU je pěkné popsáno [tady](https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl).
-
+[Jak rozběhat Micropython REPL/WebREPL](../nodemcu_repl_webrepl/nodemcu_repl_webrepl.md)

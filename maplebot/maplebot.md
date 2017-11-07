@@ -15,6 +15,11 @@ Robopixle byla náš první projekt, kde se něco pohybuje a současně, kde jsm
 
 ## Maplebot verze 2
 1. [Flash Micropythonu do NodeMCU](nodemcu_flash_micropython/nodemcu_flash.md)
-1. verze: ovládání přes Wifi/MQTT z konzole
-1. verze: ovládání přes Wifi/MQTT ze Scratch
+1. [Konzole REPL, WebREPL AP, WebREPL klient](nodemcu_repl_webrepl/nodemcu_repl_webrepl.md)
+* Sestavení podvozku robota, základní pohyb
+* PID regulace pohybu
+* MQTT
 
+* Scratch extension
+* Server pro propojení robota a Scratch
+* Čidla (vzdálenost, barva, pohyb?)
