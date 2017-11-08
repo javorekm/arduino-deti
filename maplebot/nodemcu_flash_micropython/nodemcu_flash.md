@@ -1,4 +1,5 @@
 [← zpět na zápisky z Arduino projektů](../../index.md)
+
 [← zpět na Maplebot](../maplebot.md)
 
 # Flash firmware Micropythonu do NodeMCU (ESP8266)
@@ -32,8 +33,11 @@ Aneb někdy taky toolchain. SW nářadí, které bude potřeba.
 * [Micropython firmware](http://micropython.org/download#esp8266)
 
 ## Postup
-### 1. Stáhnout  a nainstalovat [NodeMCU driver](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers), aby ho rozpoznal operační systém
+### 1. Stáhnout  a nainstalovat NodeMCU driver
+aby ho rozpoznal operační systém. [NodeMCU driver najdeme zde](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers).
+
 ### 2. Připojit NodeMCU k počítači přes microUSB kabel
+
 ### 3. Zjistit, na jakém portu se objevil
 **Windows** (nemám bohužel českou verzi)
 * Control panels/Device manager
@@ -50,8 +54,8 @@ nebo ještě lépe
 dmesg | tail
 ```
 
-### 4. Nainstalovat [Python](https://www.python.org/downloads/)
-Brát verzi 3.x, na Linuxu velmi pravděpodobně už Python je. 
+### 4. Nainstalovat Python
+[Brát verzi 3.x](https://www.python.org/downloads/), na Linuxu velmi pravděpodobně už Python je. 
 
 ### 5.  Získat Esptool
 Nástroj napsaný v pythonu pro flashování ESP8266 z příkazové řádky. Lze ho stáhnout přímo z [Githubu](https://github.com/espressif/esptool) a nebo je možné ho samozřejmě nainstalovat přímo přes pip:
@@ -104,8 +108,8 @@ MAC: 70:01:88:20:22:21
 Hard resetting...
 ```
 
-### 8. Stáhnout [Micropython firmware](http://micropython.org/download#esp8266) pro ESP8266
-Stahujeme bin soubor.
+### 8. Stáhnout Micropython firmware pro ESP8266
+Stahujeme [bin soubor](http://micropython.org/download#esp8266).
 
 * Pokud bychom chtěli flashnout (zpátky) [inpterpret Lua](https://github.com/nodemcu/nodemcu-firmware), je nutné si soubor sestavit ve vlastní režii ze zdrojáků a nebo si ho nechat sestavit on demand službou [NodeMCU custom builds](https://nodemcu-build.com/) - a vybrat si jen moduly, které potřebujeme.
 * Můžeme také [NodeMCU programovat jako Arduino](https://github.com/esp8266/Arduino/) v jazyce Wiring (pak je možné ho programovat i v Arduino IDE). Board manager v Arduino IDE se pak postará o to, že sestaví pokaždé celý firmware ESP8266 SDK spolu s naším programem a flashuje vše do NodeMCU. To znamená, že jednoduchý program na bliknutí LED pak může mít i 250 KiB.

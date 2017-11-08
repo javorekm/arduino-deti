@@ -3,6 +3,10 @@
 [← zpět na Maplebot](../maplebot.md)
 
 # Robopixle ovládaná pomocí Bluetooth z&nbsp;Python konzole
+* obsah
+{:toc}
+{::options toc_levels="2..4" /}
+
 První verze dálkově ovládaného robota, který běhá po zemi. Zatím jen ovládaná pomocí Bluetooth a&nbsp;Python konzole. Do budoucna snad předěláme na něco jiného.
 
 ## Co je potřeba umět
