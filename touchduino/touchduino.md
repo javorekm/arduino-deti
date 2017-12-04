@@ -125,7 +125,23 @@ Ve chvíli, kdy nám Arduino "generuje" klávesy na počítači, pro zbytek záb
 ![](touchduino_scratch.png)
 
 ```blocks
-po stisku klávesy [ šipka vlevo ]
+po stisku klávesy [a]
+hraj zvuk [chomp] až do konce
+
+po stisku klávesy [mezerník]
+hraj zvuk [pop] až do konce
+
+po stisku klávesy [šipka vlevo]
+hraj zvuk [snap] až do konce
+
+po stisku klávesy [šipka dolů]
+hraj zvuk [meow] až do konce
+
+po stisku klávesy [šipka vpravo]
+hraj zvuk [hand clap] až do konce
+
+po stisku klávesy [šipka nahoru]
+hraj zvuk [boing] až do konce
 ```
 
 ## Možná vylepšení
