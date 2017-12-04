@@ -32,7 +32,7 @@ Tady už řádí děti ![](P1220506.JPG)
 * 6× 2&nbsp;MΩ rezistor (Arduino Uno má 6 analogových pinů)
 
 ## Jak to funguje
-Propojili jsme Arduino Uno (ale lze vzít jakýkoli kontroler, který neumí HID) přes seriové rozhraní s počítačem, kde na něj čeká Python skript. Ten následně generuje klávesy v systému, jako by byly stisknuty na klávesnici. Klávesy pak lze zachytit v libovolném programu, např. ve [Scratchi](http://scratch.mit.edu/), ve kterém se děti často učí programovat a mohou si tak vyhrát např. se zvuky. Výsledek jsme otestovali na Windows tak i na Linuxu. Jako "tlačítka" děti použily modelínu.
+Propojili jsme Arduino Uno (ale lze vzít jakýkoli kontroler, který neumí `HID`) přes seriové rozhraní s počítačem, kde na něj čeká Python skript. Ten následně generuje klávesy v systému, jako by byly stisknuty na klávesnici. Klávesy pak lze zachytit v libovolném programu, např. ve [Scratchi](http://scratch.mit.edu/), ve kterém se děti často učí programovat a mohou si tak vyhrát např. se zvuky. Výsledek jsme otestovali na Windows tak i na Linuxu. Jako "tlačítka" děti použily modelínu.
 
 ## Schéma zapojení
 [touchduino.fzz](touchduino.fzz)
