@@ -7,7 +7,7 @@
 
 Tak pojmenovaly tento projekt děti. Naše domácí verze mnohem slavnějšího [Makey Makey](https://www.makeymakey.com/). Jde o jednoduchý obvod s detekcí uzavřené smyčky a generováním kláves v počítači.
 
-Bohužel, běžná Arduina se nechovají jako HID [(Human Interface Device)](https://en.wikipedia.org/wiki/USB_human_interface_device_class), to umí jen méně časté verze jako třeba [Leonardo, Micro či Due](https://www.arduino.cc/en/Reference.MouseKeyboard). Taková se nám doma neválí, tedy jsme si museli nějak poradit.
+Bohužel, běžná Arduina se nechovají jako `HID` [(Human Interface Device)](https://en.wikipedia.org/wiki/USB_human_interface_device_class), to umí jen méně časté verze jako třeba [Leonardo, Micro či Due](https://www.arduino.cc/en/Reference.MouseKeyboard). Taková se nám doma neválí, tedy jsme si museli nějak poradit.
 
 ## Co je potřeba umět
 Určitě je výhodou se alespoň trochu orientovat v Pythonu, hlavně v instalaci knihoven.
