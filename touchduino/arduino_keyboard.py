@@ -27,7 +27,7 @@ print("Nasloucham na portu: {}".format(port))
 print("Pro ukonceni stiskni Ctrl+C\n")
 
 ser = serial.Serial(port, 9600)
-while(1):
+while True:
     line = ser.readline()
     print("Arduino poslalo: {}".format(line))
     for k, v in KEYS.items():
