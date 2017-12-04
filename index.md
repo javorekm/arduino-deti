@@ -54,7 +54,7 @@ $ sudo usermod -aG dialout <user>
 
 ## Hry
 * [Zkoušení matematiky](infra_matika/infra_matika.md)
-* [Touchduino](touchduino/touhduino.md)
+* [Touchduino](touchduino/touchduino.md)
 
 ## [Maplebot](maplebot/maplebot.md)
 
