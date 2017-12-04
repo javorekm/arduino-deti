@@ -125,7 +125,7 @@ Ve chvíli, kdy nám Arduino "generuje" klávesy na počítači, pro zbytek záb
 ![](touchduino_scratch.png)
 
 ```blocks
-when flag clicked
+po stisku klávesy [ šipka vlevo ]
 ```
 
 ## Možná vylepšení
