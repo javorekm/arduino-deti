@@ -32,7 +32,7 @@ Tady už řádí děti ![](P1220506.JPG)
 * 6× 2&nbsp;MΩ rezistor (Arduino Uno má 6 analogových pinů)
 
 ## Jak to funguje
-Propojili jsme Arduino Uno (ale lze vzít jakýkoli kontroler, který neumí `HID`) přes seriové rozhraní s počítačem, kde na něj čeká Python skript. Ten následně generuje klávesy v systému, jako by byly stisknuty na klávesnici. Klávesy pak lze zachytit v libovolném programu, např. ve [Scratchi](http://scratch.mit.edu/), ve kterém se děti často učí programovat a mohou si tak vyhrát např. se zvuky. Výsledek jsme otestovali na Windows tak i na Linuxu. Jako "tlačítka" děti použily modelínu.
+Propojili jsme Arduino Uno (ale lze vzít jakýkoli kontroler, který neumí HID) přes seriové rozhraní s počítačem, kde na něj čeká Python skript. Ten následně generuje klávesy v systému, jako by byly stisknuty na klávesnici. Klávesy pak lze zachytit v libovolném programu, např. ve [Scratchi](http://scratch.mit.edu/), ve kterém se děti často učí programovat a mohou si tak vyhrát např. se zvuky. Výsledek jsme otestovali na Windows tak i na Linuxu. Jako "tlačítka" děti použily modelínu.
 
 ## Schéma zapojení
 [touchduino.fzz](touchduino.fzz)
@@ -68,9 +68,9 @@ Protože Arduino Uno neumí samo simulovat klávecnici (není [HID](https://en.w
 
     `PyHook` se mi podařilo nainstalovat z [balíčku wheel](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyhook) (pozor, až budete tento návod číst, může být již novější verze). 
     ```shell
-    pip install pip install pyHook-1.5.1-cp27-none-win32.whl
+    pip install pyHook-1.5.1-cp27-none-win32.whl
     ```    
-    Pipiwin32 pak standardní cestou.
+    Pypiwin32 pak standardní cestou.
     ```shell
     pip install pypiwin32
     ```
