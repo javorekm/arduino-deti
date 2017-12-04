@@ -16,7 +16,7 @@ Určitě je výhodou se alespoň trochu orientovat v Pythonu, hlavně v instalac
 První pokusy ![](P1220334.JPG)
 ![](P1220335.JPG)
 ![](P1220507.JPG)
-Tady už řádí děti ![](P1220506.JPG) 
+Tady už řádí děti ![](P1220506.JPG)
 ![](P1220515.JPG)
 ![](P1220532.JPG)
 
@@ -66,10 +66,10 @@ Protože Arduino Uno neumí samo simulovat klávecnici (není [HID](https://en.w
     ```
 3. Na **Windows** je potřeba trochu více, protože knihovna `PyUserInput` pro Windows vyžaduje dále `PyHook` a `PySerial` vyžaduje pro přístup k portům  `Pypiwin32`.
 
-    `PyHook` se mi podařilo nainstalovat z [balíčku wheel](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyhook) (pozor, až budete tento návod číst, může být již novější verze). 
+    `PyHook` se mi podařilo nainstalovat z [balíčku wheel](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyhook) (pozor, až budete tento návod číst, může být již novější verze).
     ```shell
     pip install pyHook-1.5.1-cp27-none-win32.whl
-    ```    
+    ```
     Pypiwin32 pak standardní cestou.
     ```shell
     pip install pypiwin32
@@ -123,6 +123,10 @@ Ve chvíli, kdy nám Arduino "generuje" klávesy na počítači, pro zbytek záb
 [touchduino.sb2](touchduino.sb2)
 
 ![](touchduino_scratch.png)
+
+```blocks
+when flag clicked
+```
 
 ## Možná vylepšení
 * Samozřejmě hlavním vylepšením jsou ["krokodýlci"](https://www.aliexpress.com/wholesale?ltype=wholesale&d=y&origin=y&blanktest=0&SearchText=crocodile+wires&tc=af&initiative_id=SB_20171203133207&isViewCP=y&catId=0), které ale zatím doma nemáme, časem.
