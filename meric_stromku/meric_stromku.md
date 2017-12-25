@@ -7,7 +7,7 @@
 
 Máte-li doma živý vánoční stromek, je dobré, aby měl dostatek vody. Proč je to dobré, to vám vysvětlí tohle pěkné instruktážní video:
 
-[![](http://img.youtube.com/vi/26A-49Wb2F4/0.jpg)](http://www.youtube.com/watch?v=26A-49Wb2F4 "Christmas Tree Fire: Watered Tree vs. Dry Tree")
+<iframe width="854" height="480" src="https://www.youtube.com/embed/26A-49Wb2F4?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 Rozhodli jsme se tedy postavit čidlo hladiny vody ve stojanu na vánoční stromek. Projekt prováděl syn (9) zcela sám, pouze jsem dohlížel na obtížné části.
 
