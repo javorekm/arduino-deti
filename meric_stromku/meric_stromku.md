@@ -15,24 +15,24 @@ Rozhodli jsme se tedy postavit čidlo hladiny vody ve stojanu na vánoční stro
 * Trochu pájet, pokud nestačí délka kabelů
 
 ## Foto
-![](P1220839.jpg)
+![](P1220839.JPG)
 
 Prototyp
-![](P1220841.jpg)
+![](P1220841.JPG)
 
 Kabely k čidlu bylo potřeba prodloužit
-![](P1230008.jpg)
+![](P1230008.JPG)
 
 Obestavěno v papírové krabici
-![](P1230064.jpg)
+![](P1230064.JPG)
 
 Instalace čidla ve stojanu
-![](P1230102.jpg)
-![](P1230103.jpg)
-![](P1230151.jpg)
+![](P1230102.JPG)
+![](P1230103.JPG)
+![](P1230151.JPG)
 
 Napájení Arduina je přes USB
-![](P1230132.jpg)
+![](P1230132.JPG)
 
 ## Hardware
 * Několik barevných LED
