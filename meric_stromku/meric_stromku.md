@@ -56,7 +56,8 @@ _(maloval syn (9) sám, celý návhr zapojení je jeho)_
 ```
 
 ## Možná vylepšení
-* Siréna :-)
+Siréna :-)
 
 ## Poznatky
-* Zjistili jsme, že náš stromek (jedle, asi 2,2&nbsp;m) vypije denně při okolní teplotě kolem 22°C asi 3&nbsp;l vody, což je více než volný objem stojanu. Je proto nutné dolévat i vícekrát za den.
+* Zjistili jsme, že náš stromek (jedle, asi 2,2&nbsp;m) vypije denně při okolní teplotě kolem 22°C asi **3&nbsp;l vody**, což je více než volný objem stojanu. Je proto nutné dolévat i vícekrát za den.
+* Nepájivé pole je dobré pro prototyp, ale v krabičce se z něj drátky uvolňují, nedrží dobře a dochází k různým studeným spojům. Musíme se vybavit nějakými šikovnými [pájivými poli](https://www.aliexpress.com/wholesale?ltype=wholesale&d=y&origin=y&blanktest=0&jump=afs&SearchText=soldering+board&tc=af&initiative_id=SB_20171225054222&isViewCP=y&catId=0).

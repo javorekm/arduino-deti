@@ -46,6 +46,7 @@ $ sudo usermod -aG dialout <user>
 ## Čidla
 * [Teploměr se 7 segmentovým LED](teplomer/teplomer.md)
 * [Ultrazvukové měření vzdálenosti s OLED](meric_vzdalenosti/meric_vzdalenosti.md)
+* [Čidlo hladiny vody ve stojanu na vánoční stromek](meric_stromku/meric_stromku.md)
 * Vlhkost půdy
 * Vlhkost vzduchu, teplota, nadmořská výška
 
