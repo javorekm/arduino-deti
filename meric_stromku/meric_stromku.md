@@ -43,7 +43,7 @@ Napájení Arduina je přes USB
 Protože by čidlo vlhkosti mohlo při trvalém napětí rychle reznout, program měří vodu ve stojanu pouze jednou za půl hodiny, po zbytek času je čidlo odpojeno. Ve chvíli, kdy zjistí, že je na suchu, bliká červenými LED a měří zhruba co sekundu. To je dobré, protože je pak okamžitá reakce při zalévání stojanu.
 
 ## Schéma zapojení
-_(maloval syn (9) sám, celý návhr zapojení je jeho)_
+_(maloval syn (9) sám, celý návrh zapojení je jeho)_
 
 [meric_stromku.fzz](meric_stromku.fzz)
 
@@ -61,3 +61,4 @@ Siréna :-)
 ## Poznatky
 * Zjistili jsme, že náš stromek (jedle, asi 2,2&nbsp;m) vypije denně při okolní teplotě kolem 22°C asi **3&nbsp;l vody**, což je více než volný objem stojanu. Je proto nutné dolévat i vícekrát za den.
 * Nepájivé pole je dobré pro prototyp, ale v krabičce se z něj drátky uvolňují, nedrží dobře a dochází k různým studeným spojům. Musíme se vybavit nějakými šikovnými [pájivými poli](https://www.aliexpress.com/wholesale?ltype=wholesale&d=y&origin=y&blanktest=0&jump=afs&SearchText=soldering+board&tc=af&initiative_id=SB_20171225054222&isViewCP=y&catId=0).
+
