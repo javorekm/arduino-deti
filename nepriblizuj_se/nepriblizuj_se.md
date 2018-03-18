@@ -30,6 +30,7 @@ Po úspěchu [ultrazvukového měření vzdálenosti](../meric_vzdalenosti/meric
 * ultrazvukové čidlo HC-SR04 ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170322115709&SearchText=hc-sr04), [specifikace](HCSR04.pdf))
 * mp3 přehrávač ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20180318111806&SearchText=mini+mp3+player+arduino), [specifikace](https://www.dfrobot.com/wiki/index.php/DFPlayer_Mini_SKU:DFR0299))
 * malý reproduktor ([Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20180318112256&SearchText=mini+amplifier+speaker+horn))
+* resistor 1&nbsp;kΩ
 * microSD karta pro přehrávač
 
 ## Software
