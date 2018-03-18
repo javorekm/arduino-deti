@@ -53,9 +53,10 @@ $ sudo usermod -aG dialout <user>
 ## Ovládání
 * [Joystick](joystick/joystick.md)
 
-## Hry
-* [Zkoušení matematiky](infra_matika/infra_matika.md)
-* [Touchduino](touchduino/touchduino.md)
+## Hry a hraní
+* [Zkoušení matematiky](infra_matika/infra_matika.md) (dálkovým ovladačem od rádia ovládáme a na displeji počítáme)
+* [Touchduino](touchduino/touchduino.md) (hrajeme si s uzavřeným obvodem a propojujeme se modelínou)
+* [Nepřibližuj se!](nepriblizuj_se/nepriblizuj_se.md) (ultrazvukový senzor, reprák a mp3 přehrávač)
 
 ## [Maplebot](maplebot/maplebot.md)
 
