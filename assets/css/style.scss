@@ -4,3 +4,7 @@
 @import "{{ site.theme }}";
 
 img, video { width: 100%; }
+
+a h1, a h2 {
+    text-decoration: none;
+}
