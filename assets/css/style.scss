@@ -5,10 +5,11 @@
 
 img, video { width: 100%; }
 
-a:hover h1, a:hover h2{
+.nohover:hover {
     text-decoration: none;
 }
 
 #header_wrap .inner {
-    padding: 0px;
+    padding: 20px;
 }
+
